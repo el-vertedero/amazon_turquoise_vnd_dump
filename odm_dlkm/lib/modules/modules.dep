@@ -1,0 +1,15 @@
+/odm/lib/modules/virtual_sensor_thermal_sensors.ko:
+/odm/lib/modules/virtual_sensor_thermal_gadc.ko:
+/odm/lib/modules/fpr_gf3656.ko:
+/odm/lib/modules/ld_discrete.ko:
+/odm/lib/modules/virtual_sensor_cooler_budget.ko: /odm/lib/modules/virtual_sensor_thermal_sensors.ko
+/odm/lib/modules/i2c-hid-nt36xxx.ko: /odm/lib/modules/stylus_battery_algo.ko
+/odm/lib/modules/adc-mux.ko:
+/odm/lib/modules/i2c-hid-ili79xxx.ko: /odm/lib/modules/stylus_battery_algo.ko
+/odm/lib/modules/sysrst_cooling.ko:
+/odm/lib/modules/i2c-hid-ft82xx.ko:
+/odm/lib/modules/virtual_sensor_cooler_backlight.ko: /odm/lib/modules/virtual_sensor_thermal_sensors.ko
+/odm/lib/modules/virtual_sensor_cooler_devfreq.ko: /odm/lib/modules/virtual_sensor_thermal_sensors.ko
+/odm/lib/modules/stylus_battery_algo.ko:
+/odm/lib/modules/virtual_sensor_tablet_thermal.ko: /odm/lib/modules/virtual_sensor_thermal_sensors.ko
+/odm/lib/modules/virtual_sensor_cooler_bcct.ko: /odm/lib/modules/virtual_sensor_thermal_sensors.ko

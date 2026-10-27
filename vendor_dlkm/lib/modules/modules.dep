@@ -1,0 +1,223 @@
+/vendor/lib/modules/mt6577_auxadc.ko:
+/vendor/lib/modules/mcupm.ko: /vendor/lib/modules/mtk_tinysys_ipi.ko /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko
+/vendor/lib/modules/atf_logger.ko:
+/vendor/lib/modules/mtk_gpu_hal.ko:
+/vendor/lib/modules/cache-parity.ko:
+/vendor/lib/modules/ktchbst.ko:
+/vendor/lib/modules/cam_qos.ko:
+/vendor/lib/modules/mtk-sp-spk-amp.ko:
+/vendor/lib/modules/mtk-lpm.ko:
+/vendor/lib/modules/mtk-lpm-dbg-common-v2.ko: /vendor/lib/modules/mtk-lpm.ko
+/vendor/lib/modules/mtk-spmi-pmic-debug.ko:
+/system/lib/modules/ppp_deflate.ko: /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/mtk_sec_heap_cma_helper.ko:
+/vendor/lib/modules/camera_isp.ko: /vendor/lib/modules/archcounter_timesync.ko /vendor/lib/modules/cam_qos.ko
+/vendor/lib/modules/mtk_cm_mgr_mt8189.ko: /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_cm_mgr.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/mtk_cm_ipi.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/board_temp.ko:
+/vendor/lib/modules/leds-mtk.ko:
+/vendor/lib/modules/met_scmi_api.ko: /vendor/lib/modules/met.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/panel-truly-tdo-bd0598u40004.ko: /vendor/lib/modules/mediatek-drm.ko /vendor/lib/modules/drm_display_helper.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/drm_dma_helper.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/mtk-mml.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/mainaf.ko:
+/vendor/lib/modules/was4780.ko: /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/reset-ti-syscon.ko:
+/system/lib/modules/slhc.ko:
+/vendor/lib/modules/thermal-generic-adc.ko:
+/vendor/lib/modules/tcpc_rt1711h.ko: /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/charger_cooling.ko:
+/vendor/lib/modules/mtk_heap_debug.ko: /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/mtk_mm_heap.ko
+/vendor/lib/modules/mtk_chg_type_det.ko: /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/system/lib/modules/cdc_ncm.ko: /system/lib/modules/cdc_ether.ko /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/system/lib/modules/ppp_generic.ko: /system/lib/modules/slhc.ko
+/vendor/lib/modules/mtk_pep20.ko: /vendor/lib/modules/mtk_charger_framework.ko /vendor/lib/modules/mt6375-battery.ko /vendor/lib/modules/pmic_lbat_service.ko /vendor/lib/modules/battery_metrics.ko /vendor/lib/modules/adapter_class.ko /vendor/lib/modules/mtk_charger_algorithm_class.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/mtk_static_power.ko:
+/vendor/lib/modules/mtk-afe-external.ko:
+/vendor/lib/modules/pwm-mtk-disp.ko:
+/vendor/lib/modules/mtk-scpsys-bringup.ko:
+/vendor/lib/modules/soc_temp_lvts.ko: /vendor/lib/modules/charger_class.ko
+/vendor/lib/modules/mtk-dvfsrc-helper.ko: /vendor/lib/modules/mtk_dramc.ko
+/vendor/lib/modules/snd-soc-mt8189-adsp-pcm.ko: /vendor/lib/modules/audio_ipi_framework.ko /vendor/lib/modules/audio_ipi_platform.ko /vendor/lib/modules/hifi_dsp.ko /vendor/lib/modules/adsp_ipi.ko /vendor/lib/modules/adsp_ipi_queue.ko
+/vendor/lib/modules/btmtk_vnd.ko: /vendor/lib/modules/bt_drv_6878.ko /vendor/lib/modules/connfem.ko /vendor/lib/modules/conninfra.ko /vendor/lib/modules/connadp.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/mtk_disp_notify.ko
+/system/lib/modules/rtl8150.ko:
+/system/lib/modules/l2tp_core.ko:
+/vendor/lib/modules/mtk_gpu_qos.ko: /vendor/lib/modules/mtk_qos.ko /vendor/lib/modules/emi.ko /vendor/lib/modules/sspm_v3.ko /vendor/lib/modules/mtk_gpufreq_wrapper.ko /vendor/lib/modules/mtk_gpu_hal.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/amzn_dbg.ko: /vendor/lib/modules/amzn_metrics.ko
+/vendor/lib/modules/mtk_tinysys_ipi.ko: /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko
+/vendor/lib/modules/wmt_chrdev_wifi_connac2.ko:
+/vendor/lib/modules/mux-gpio.ko: /vendor/lib/modules/mux-core.ko
+/vendor/lib/modules/connadp.ko:
+/vendor/lib/modules/clkbuf.ko:
+/vendor/lib/modules/mtk-mbox-mailbox.ko:
+/vendor/lib/modules/sensorhub.ko: /vendor/lib/modules/hf_manager.ko /vendor/lib/modules/scp.ko /vendor/lib/modules/mtk-afe-external.ko /vendor/lib/modules/mtk_tinysys_ipi.ko /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko
+/vendor/lib/modules/industrialio-triggered-buffer.ko: /vendor/lib/modules/kfifo_buf.ko
+/vendor/lib/modules/met.ko:
+/vendor/lib/modules/ax_usb_nic.ko: /system/lib/modules/mii.ko
+/vendor/lib/modules/mediatek-drm-panel-drv.ko: /vendor/lib/modules/mediatek-drm-gateic.ko /vendor/lib/modules/mediatek-drm.ko /vendor/lib/modules/drm_display_helper.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/drm_dma_helper.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/mtk-mml.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/mtk-vcu.ko: /vendor/lib/modules/mtk-vcodec-common.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/mtk-kpd.ko:
+/system/lib/modules/r8152.ko: /system/lib/modules/mii.ko
+/vendor/lib/modules/emi-mpu-test-v2.ko:
+/vendor/lib/modules/mtk_panel_ext.ko:
+/vendor/lib/modules/rps_perf.ko:
+/vendor/lib/modules/extcon-mtk-usb.ko: /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/amzn_switch.ko:
+/vendor/lib/modules/pmic_lvsys_notify.ko:
+/vendor/lib/modules/mmprofile.ko:
+/vendor/lib/modules/mtk_qos.ko: /vendor/lib/modules/emi.ko /vendor/lib/modules/sspm_v3.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/kfifo_buf.ko:
+/vendor/lib/modules/emi.ko:
+/vendor/lib/modules/mtk-pm-domain-disable-unused.ko:
+/vendor/lib/modules/audio_ipi_platform.ko:
+/vendor/lib/modules/mt6375-battery.ko: /vendor/lib/modules/pmic_lbat_service.ko /vendor/lib/modules/battery_metrics.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/pd_dbg_info.ko:
+/vendor/lib/modules/tinysys-scmi.ko:
+/system/lib/modules/asix.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/vendor/lib/modules/mtk_rpmsg_mbox.ko: /vendor/lib/modules/mtk-mbox.ko
+/vendor/lib/modules/mtk_cm_ipi.ko: /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/bt_drv_6878.ko: /vendor/lib/modules/connfem.ko /vendor/lib/modules/conninfra.ko /vendor/lib/modules/connadp.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/mtk-mbox.ko:
+/vendor/lib/modules/spk-codec-gain-cali.ko:
+/vendor/lib/modules/camera_dip_isp6s.ko: /vendor/lib/modules/cmdq_helper_inf.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/system/lib/modules/rfkill.ko:
+/vendor/lib/modules/mtk_charger_framework.ko: /vendor/lib/modules/mt6375-battery.ko /vendor/lib/modules/pmic_lbat_service.ko /vendor/lib/modules/battery_metrics.ko /vendor/lib/modules/adapter_class.ko /vendor/lib/modules/mtk_charger_algorithm_class.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/last_bus.ko: /vendor/lib/modules/dbg_error_flag.ko
+/vendor/lib/modules/hifi_dsp.ko: /vendor/lib/modules/adsp_ipi.ko /vendor/lib/modules/adsp_ipi_queue.ko
+/system/lib/modules/ppp_mppe.ko: /system/lib/modules/libarc4.ko /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/dbg_error_flag.ko:
+/vendor/lib/modules/mtk_cm_mgr.ko: /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/mtk_cm_ipi.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/adapter_class.ko:
+/vendor/lib/modules/adsp_ipi.ko: /vendor/lib/modules/adsp_ipi_queue.ko
+/vendor/lib/modules/met_gpueb_api.ko:
+/vendor/lib/modules/mt6359p-accdet-common.ko: /vendor/lib/modules/was4780.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/mdp_drv_mt8189.ko: /vendor/lib/modules/cmdq_helper_inf.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/audio_ringbuf.ko:
+/vendor/lib/modules/mtk-vcodec-dec-v2.ko: /vendor/lib/modules/mtk-vcodec-common.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_mm_heap.ko
+/vendor/lib/modules/pmic_lbat_service.ko:
+/vendor/lib/modules/mtk_charger_algorithm_class.ko:
+/vendor/lib/modules/iaicr_cal.ko:
+/vendor/lib/modules/mediatek-drm-gateic.ko: /vendor/lib/modules/mediatek-drm.ko /vendor/lib/modules/drm_display_helper.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/drm_dma_helper.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/mtk-mml.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/spi-mt65xx.ko:
+/vendor/lib/modules/mtk_pep.ko: /vendor/lib/modules/mtk_charger_framework.ko /vendor/lib/modules/mt6375-battery.ko /vendor/lib/modules/pmic_lbat_service.ko /vendor/lib/modules/battery_metrics.ko /vendor/lib/modules/adapter_class.ko /vendor/lib/modules/mtk_charger_algorithm_class.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/mt6359-common.ko: /vendor/lib/modules/mt6359p-accdet-common.ko /vendor/lib/modules/was4780.ko /vendor/lib/modules/spk-codec-gain-cali.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/camera_eeprom.ko: /vendor/lib/modules/imgsensor_isp6s.ko
+/system/lib/modules/cdc_eem.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/vendor/lib/modules/mux-core.ko:
+/vendor/lib/modules/bus-parity.ko: /vendor/lib/modules/dbg_error_flag.ko
+/vendor/lib/modules/met_gpu_api.ko: /vendor/lib/modules/mtk_gpu_hal.ko /vendor/lib/modules/met.ko
+/vendor/lib/modules/log_store.ko:
+/vendor/lib/modules/scp.ko: /vendor/lib/modules/mtk-afe-external.ko /vendor/lib/modules/mtk_tinysys_ipi.ko /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko
+/vendor/lib/modules/mtk-lpm-plat-v1.ko: /vendor/lib/modules/mtk-lpm.ko
+/vendor/lib/modules/mediatek-drm.ko: /vendor/lib/modules/drm_display_helper.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/drm_dma_helper.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/mtk-mml.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/charger_class.ko:
+/vendor/lib/modules/mali_kbase_mt8189_r48.ko: /vendor/lib/modules/ged.ko /vendor/lib/modules/mtk_gpu_qos.ko /vendor/lib/modules/mtk_qos.ko /vendor/lib/modules/emi.ko /vendor/lib/modules/sspm_v3.ko /vendor/lib/modules/mtk_gpufreq_wrapper.ko /vendor/lib/modules/mtk_gpu_hal.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/amzn_keycombo.ko:
+/vendor/lib/modules/thermal_trace.ko: /vendor/lib/modules/thermal_interface.ko /vendor/lib/modules/mtk_gpufreq_wrapper.ko /vendor/lib/modules/mtk_gpu_hal.ko /vendor/lib/modules/mediatek-drm.ko /vendor/lib/modules/drm_display_helper.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/drm_dma_helper.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/mtk-mml.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/pda_drv_mt8189.ko:
+/system/lib/modules/cdc_ether.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/system/lib/modules/usbnet.ko: /system/lib/modules/mii.ko
+/vendor/lib/modules/met_sspm_api.ko: /vendor/lib/modules/sspm_v3.ko /vendor/lib/modules/met.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/pd-chk-mt8189.ko: /vendor/lib/modules/clk-chk-mt8189.ko
+/system/lib/modules/libarc4.ko:
+/vendor/lib/modules/met_backlight_api.ko: /vendor/lib/modules/mtk_printk_ctrl.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/met.ko
+/vendor/lib/modules/pmic_temp.ko: /vendor/lib/modules/charger_class.ko
+/vendor/lib/modules/tcpc_mt6375.ko: /vendor/lib/modules/amzn_switch.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/met_vcore_api.ko: /vendor/lib/modules/mtk-dvfsrc-helper.ko /vendor/lib/modules/met.ko /vendor/lib/modules/mtk_dramc.ko
+/system/lib/modules/r8153_ecm.ko: /system/lib/modules/r8152.ko /system/lib/modules/cdc_ether.ko /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/vendor/lib/modules/archcounter_timesync.ko:
+/vendor/lib/modules/clk-disable-unused.ko:
+/vendor/lib/modules/sspm_v3.ko: /vendor/lib/modules/tinysys-scmi.ko
+/system/lib/modules/aqc111.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/vendor/lib/modules/amzn_metrics.ko:
+/system/lib/modules/kheaders.ko:
+/vendor/lib/modules/leds-mtk-pwm.ko: /vendor/lib/modules/mediatek-drm.ko /vendor/lib/modules/drm_display_helper.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/drm_dma_helper.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/mtk-mml.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/tcpc_class.ko: /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/emi-fake-eng.ko:
+/vendor/lib/modules/mtk-dvfsrc-start.ko:
+/vendor/lib/modules/mtk-btcvsd.ko:
+/system/lib/modules/pptp.ko: /system/lib/modules/pppox.ko /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/system/lib/modules/tipc.ko:
+/vendor/lib/modules/mtk_mma_driver.ko:
+/vendor/lib/modules/emi-mpu.ko:
+/system/lib/modules/zsmalloc.ko:
+/vendor/lib/modules/mt8189-mt6359p-snd.ko: /vendor/lib/modules/amzn_hall.ko /vendor/lib/modules/mtk-kpd.ko /vendor/lib/modules/mt6359-common.ko /vendor/lib/modules/mt6359p-accdet-common.ko /vendor/lib/modules/was4780.ko /vendor/lib/modules/spk-codec-gain-cali.ko /vendor/lib/modules/snd-soc-mt8189-afe.ko /vendor/lib/modules/snd-soc-mtk-common.ko /vendor/lib/modules/mtk-afe-external.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/conninfra.ko: /vendor/lib/modules/connadp.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/mtk_gpufreq_wrapper.ko: /vendor/lib/modules/mtk_gpu_hal.ko
+/vendor/lib/modules/mtk_pd_adapter.ko: /vendor/lib/modules/adapter_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/met_ipi_api.ko: /vendor/lib/modules/mtk_tinysys_ipi.ko /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko /vendor/lib/modules/met.ko
+/vendor/lib/modules/mt6375-charger.ko: /vendor/lib/modules/iaicr_cal.ko /vendor/lib/modules/charger_class.ko
+/vendor/lib/modules/cmdq-sec-drv.ko: /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/mtk_printk_ctrl.ko:
+/vendor/lib/modules/audio_memory.ko:
+/vendor/lib/modules/camera_mfb_isp6s.ko: /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/cfg80211.ko: /system/lib/modules/rfkill.ko
+/vendor/lib/modules/mtk-lpm-dbg-mt8189.ko: /vendor/lib/modules/mtk-lpm-dbg-common-v2.ko /vendor/lib/modules/mtk-lpm.ko
+/vendor/lib/modules/at24.ko:
+/vendor/lib/modules/system_heap.ko:
+/vendor/lib/modules/mtk_pep40.ko: /vendor/lib/modules/mtk_charger_framework.ko /vendor/lib/modules/mt6375-battery.ko /vendor/lib/modules/pmic_lbat_service.ko /vendor/lib/modules/battery_metrics.ko /vendor/lib/modules/adapter_class.ko /vendor/lib/modules/mtk_charger_algorithm_class.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/clk-chk-mt8189.ko:
+/vendor/lib/modules/usb_boost.ko: /vendor/lib/modules/mtk-dvfsrc-helper.ko /vendor/lib/modules/mtk_dramc.ko
+/vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko: /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/mtk_mm_heap.ko
+/vendor/lib/modules/met_mcupm_api.ko: /vendor/lib/modules/mcupm.ko /vendor/lib/modules/mtk_tinysys_ipi.ko /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko /vendor/lib/modules/met.ko
+/vendor/lib/modules/mtk_usb_f_rndis.ko: /vendor/lib/modules/mtk_u_ether.ko /vendor/lib/modules/rps_perf.ko
+/vendor/lib/modules/mtk-vcodec-common.ko: /vendor/lib/modules/mtk_mma_driver.ko
+/vendor/lib/modules/mtk_gpufreq_mt8189.ko: /vendor/lib/modules/mtk_gpufreq_wrapper.ko /vendor/lib/modules/mtk_gpu_hal.ko
+/vendor/lib/modules/drm_dma_helper.ko:
+/vendor/lib/modules/backlight_cooling.ko: /vendor/lib/modules/leds-mtk.ko
+/system/lib/modules/gzvm.ko:
+/vendor/lib/modules/rt4831a_drv.ko: /vendor/lib/modules/leds-mtk.ko
+/vendor/lib/modules/adsp_ipi_queue.ko:
+/vendor/lib/modules/battery_info.ko:
+/vendor/lib/modules/snd-soc-mt8189-afe.ko: /vendor/lib/modules/snd-soc-mtk-common.ko /vendor/lib/modules/mtk-afe-external.ko
+/vendor/lib/modules/snd-soc-mtk-common.ko: /vendor/lib/modules/mtk-afe-external.ko
+/vendor/lib/modules/mtk_disp_notify.ko:
+/system/lib/modules/wwan.ko:
+/system/lib/modules/l2tp_ppp.ko: /system/lib/modules/l2tp_core.ko /system/lib/modules/pppox.ko /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/rt_pd_manager.ko: /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/vendor/lib/modules/rtc-mt6397.ko:
+/vendor/lib/modules/mtk-cmdq-drv-ext.ko: /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/met_gpu_adv_api.ko: /vendor/lib/modules/mtk_gpu_hal.ko /vendor/lib/modules/met.ko
+/system/lib/modules/ax88179_178a.ko: /system/lib/modules/usbnet.ko /system/lib/modules/mii.ko
+/vendor/lib/modules/camera_mem.ko: /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/mtk_mm_heap.ko
+/vendor/lib/modules/camera_fdvt_isp51.ko: /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/camera_rsc_isp60.ko: /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/audio_ipi_framework.ko: /vendor/lib/modules/audio_ipi_platform.ko /vendor/lib/modules/adsp_ipi.ko /vendor/lib/modules/adsp_ipi_queue.ko
+/vendor/lib/modules/nvmem-mt635x-efuse.ko:
+/vendor/lib/modules/tcpci_late_sync.ko: /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko
+/system/lib/modules/bsd_comp.ko: /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/mtk-mml.ko: /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/mtk_u_ether.ko: /vendor/lib/modules/rps_perf.ko
+/vendor/lib/modules/reset-mediatek.ko:
+/vendor/lib/modules/arm_dsu_pmu.ko:
+/vendor/lib/modules/mtk_sync.ko:
+/vendor/lib/modules/clk-bringup.ko:
+/vendor/lib/modules/mtk_pd_charging.ko: /vendor/lib/modules/mtk_charger_framework.ko /vendor/lib/modules/mt6375-battery.ko /vendor/lib/modules/pmic_lbat_service.ko /vendor/lib/modules/battery_metrics.ko /vendor/lib/modules/adapter_class.ko /vendor/lib/modules/mtk_charger_algorithm_class.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/thermal_interface.ko: /vendor/lib/modules/mtk_gpufreq_wrapper.ko /vendor/lib/modules/mtk_gpu_hal.ko /vendor/lib/modules/mediatek-drm.ko /vendor/lib/modules/drm_display_helper.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/drm_dma_helper.ko /vendor/lib/modules/mtk_sec_heap_mt8xxx_v2.ko /vendor/lib/modules/mtk_mma_driver.ko /vendor/lib/modules/mtk_sec_heap_cma_helper.ko /vendor/lib/modules/cmdq-sec-drv.ko /vendor/lib/modules/leds-mtk.ko /vendor/lib/modules/mtk-mml.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_sync.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/mtk_disp_notify.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/mtk_dramc.ko:
+/vendor/lib/modules/hf_manager.ko:
+/vendor/lib/modules/cmdq-platform-mt8189.ko: /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/amzn_panic_helper.ko:
+/system/lib/modules/pppox.ko: /system/lib/modules/ppp_generic.ko /system/lib/modules/slhc.ko
+/vendor/lib/modules/met_emi_api.ko: /vendor/lib/modules/mtk-dvfsrc-helper.ko /vendor/lib/modules/met.ko /vendor/lib/modules/mtk_dramc.ko
+/vendor/lib/modules/yeti_otp.ko:
+/vendor/lib/modules/connfem.ko:
+/vendor/lib/modules/camera_wpe_isp6s.ko: /vendor/lib/modules/cmdq_helper_inf.ko /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/ged.ko: /vendor/lib/modules/mtk_gpu_qos.ko /vendor/lib/modules/mtk_qos.ko /vendor/lib/modules/emi.ko /vendor/lib/modules/sspm_v3.ko /vendor/lib/modules/mtk_gpufreq_wrapper.ko /vendor/lib/modules/mtk_gpu_hal.ko /vendor/lib/modules/mtk_mm_heap.ko /vendor/lib/modules/mtk_dramc.ko /vendor/lib/modules/tinysys-scmi.ko
+/vendor/lib/modules/blocktag.ko:
+/vendor/lib/modules/mtk-vcodec-enc-v2.ko: /vendor/lib/modules/mtk-vcodec-common.ko /vendor/lib/modules/mtk_mma_driver.ko
+/system/lib/modules/diag.ko: /system/lib/modules/tipc.ko
+/vendor/lib/modules/mediatek-cpufreq-hw.ko:
+/vendor/lib/modules/panel-kd-kd101nd451iia002.ko: /vendor/lib/modules/rt4831a_drv.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/leds-mtk.ko
+/vendor/lib/modules/cpuhvfs.ko: /vendor/lib/modules/mcupm.ko /vendor/lib/modules/mtk_tinysys_ipi.ko /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko
+/system/lib/modules/zram.ko: /system/lib/modules/zsmalloc.ko
+/vendor/lib/modules/imgsensor_isp6s.ko:
+/vendor/lib/modules/cmdq_helper_inf.ko: /vendor/lib/modules/mtk-cmdq-drv-ext.ko /vendor/lib/modules/mmprofile.ko
+/vendor/lib/modules/mtk_pep45.ko: /vendor/lib/modules/mtk_charger_framework.ko /vendor/lib/modules/mt6375-battery.ko /vendor/lib/modules/pmic_lbat_service.ko /vendor/lib/modules/battery_metrics.ko /vendor/lib/modules/adapter_class.ko /vendor/lib/modules/mtk_charger_algorithm_class.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/tcpc_class.ko /vendor/lib/modules/pd_dbg_info.ko /vendor/lib/modules/mtk_disp_notify.ko
+/system/lib/modules/mii.ko:
+/vendor/lib/modules/amzn_hall.ko:
+/vendor/lib/modules/battery_metrics.ko: /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/wlan_drv_gen4m_8189.ko: /vendor/lib/modules/cfg80211.ko /system/lib/modules/rfkill.ko /vendor/lib/modules/wmt_chrdev_wifi_connac2.ko /vendor/lib/modules/mtk-lpm.ko /vendor/lib/modules/amzn_metrics.ko /vendor/lib/modules/connfem.ko /vendor/lib/modules/conninfra.ko /vendor/lib/modules/connadp.ko /vendor/lib/modules/charger_class.ko /vendor/lib/modules/mtk_disp_notify.ko
+/vendor/lib/modules/drm_display_helper.ko:
+/vendor/lib/modules/mt63xx-debug.ko:
+/vendor/lib/modules/mtk_mm_heap.ko:
+/vendor/lib/modules/fhctl.ko: /vendor/lib/modules/mcupm.ko /vendor/lib/modules/mtk_tinysys_ipi.ko /vendor/lib/modules/mtk_rpmsg_mbox.ko /vendor/lib/modules/mtk-mbox.ko
+/vendor/lib/modules/mac80211.ko: /vendor/lib/modules/cfg80211.ko /system/lib/modules/rfkill.ko /system/lib/modules/libarc4.ko
+/vendor/lib/modules/panel-boe-tv101wum-lmd.ko: /vendor/lib/modules/rt4831a_drv.ko /vendor/lib/modules/mtk_panel_ext.ko /vendor/lib/modules/leds-mtk.ko

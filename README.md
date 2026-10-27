@@ -1,0 +1,14 @@
+# turquoise-user 16 SL16SHIP2003 1344N amz-p,release-keys
+- manufacturer: amazon
+- platform: mt8189
+- codename: turquoise_vnd
+- flavor: turquoise-user
+- release: 16
+- id: SL16SHIP2003
+- incremental: 1344N
+- tags: amz-p,release-keys
+- fingerprint: Amazon/turquoise_vnd/turquoise_vnd:14/UD2A.240505.001.W1/7:user/amz-p,release-keys
+- is_ab: true
+- brand: Amazon
+- branch: turquoise-user-16-SL16SHIP2003-1344N-amz-p,release-keys
+- repo: amazon_turquoise_vnd_dump

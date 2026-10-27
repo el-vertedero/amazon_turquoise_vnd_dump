@@ -1,0 +1,16 @@
+product/priv-app/com.amazon.firekeyboard/com.amazon.firekeyboard.apk.zst
+product/priv-app/com.amazon.mp3/com.amazon.mp3.apk.zst
+product/priv-app/SilkTablet/SilkTablet.apk.zst
+product/priv-app/GmsCore/GmsCore.apk.zst
+product/priv-app/com.amazon.avod/com.amazon.avod.apk.zst
+product/priv-app/com.amazon.kindle/com.amazon.kindle.apk.zst
+product/priv-app/Velvet/Velvet.apk.zst
+product/priv-app/com.amazon.clouddrive.photos/com.amazon.clouddrive.photos.apk.zst
+product/app/Maps/Maps.apk.zst
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk.zst
+product/app/com.audible.application.kindle/com.audible.application.kindle.apk.zst
+product/app/YouTube/YouTube.apk.zst
+product/app/Photos/Photos.apk.zst
+product/app/Meet/Meet.apk.zst
+product/app/WebViewGoogle64/WebViewGoogle64.apk.zst
+product/app/Gmail2/Gmail2.apk.zst

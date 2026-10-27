@@ -1,0 +1,15 @@
+stylus_battery_algo.ko
+i2c-hid-ili79xxx.ko
+i2c-hid-nt36xxx.ko
+i2c-hid-ft82xx.ko
+adc-mux.ko
+ld_discrete.ko
+fpr_gf3656.ko
+sysrst_cooling.ko
+virtual_sensor_thermal_sensors.ko
+virtual_sensor_cooler_backlight.ko
+virtual_sensor_cooler_bcct.ko
+virtual_sensor_cooler_budget.ko
+virtual_sensor_cooler_devfreq.ko
+virtual_sensor_thermal_gadc.ko
+virtual_sensor_tablet_thermal.ko
