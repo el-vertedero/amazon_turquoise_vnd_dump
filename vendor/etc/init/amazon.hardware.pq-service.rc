@@ -1,0 +1,7 @@
+service amzn_pq /vendor/bin/hw/amazon.hardware.pq-service
+        interface aidl amazon.hardware.pq.IAmazonPictureQuality/default
+        class hal
+        user system
+        group system
+        oneshot
+        disabled

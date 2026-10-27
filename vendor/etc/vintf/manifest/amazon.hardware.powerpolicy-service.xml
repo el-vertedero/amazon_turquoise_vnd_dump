@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+   Copyright (c) 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<!-- powerpolicy/amazon.hardware.powerpolicy-service.xml -->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>amazon.hardware.powerpolicy</name>
+        <version>1</version>
+        <fqname>IAmazonPowerPolicyServer/default</fqname>
+    </hal>
+</manifest>

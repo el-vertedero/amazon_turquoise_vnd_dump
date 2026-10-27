@@ -1,0 +1,12 @@
+service vendor.biometrics.fingerprint-service.amazon /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.amazon
+    class hal
+    user system
+    group system input uhid
+    interface aidl android.hardware.biometrics.fingerprint.IFingerprint/default
+    disabled
+    task_profiles ProcessCapacityHigh MaxPerformance
+
+on property:vendor.all.modules.ready=1
+    chown system system /dev/goodix_fp
+    chmod 0666 /dev/goodix_fp
+    setprop ro.hardware.fingerprint goodix3656

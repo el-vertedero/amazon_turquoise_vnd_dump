@@ -1,0 +1,212 @@
+import /vendor/etc/init/hw/init.mtkgki.rc
+import /vendor/etc/init/hw/init.pstore.rc
+
+# MTK project .rc configure
+
+on init
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+
+# zram writeback for base device
+on init && property:ro.boot.product.hardware.ramsize=4
+    setprop persist.sys.zram_enabled 1
+    wait /dev/block/zram0 5
+    write /sys/block/zram0/comp_algorithm lz4
+    swapon_all /vendor/etc/fstab_4gb.enableswap
+
+# zram writeback for upsell device
+on init && property:ro.boot.product.hardware.ramsize=8
+    setprop persist.sys.zram_enabled 1
+    wait /dev/block/zram0 5
+    write /sys/block/zram0/comp_algorithm lz4
+    swapon_all /vendor/etc/fstab_8gb.enableswap
+
+#Set min_watermark for base config
+on init && property:ro.boot.product.hardware.ramsize=4
+    write /proc/sys/vm/min_free_kbytes 32768
+
+#Set min_watermark for upsell config
+on init && property:ro.boot.product.hardware.ramsize=8
+    write /proc/sys/vm/min_free_kbytes 43008
+
+on post-fs-data
+
+#Fingerprint dump
+    mkdir /data/vendor/fpdump
+    chown system system /data/vendor/fpdump
+    chmod 0700 /data/vendor/fpdump
+
+#Camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
+
+#SMB
+    chown system system /proc/smb/ScreenComm
+    chmod 0660 /proc/smb/ScreenComm
+
+    chmod 0660 /dev/spm
+    chown system system /dev/spm
+
+#fuelgauged
+    chown system system /sys/class/power_supply/battery_info/old_fg_data
+    chown system system /sys/class/power_supply/battery_info/old_fg_data_bk
+
+#charging policy
+    chmod 0660 /sys/class/power_supply/battery/charging_policy
+    chown system system /sys/class/power_supply/battery/charging_policy
+
+# platform_health
+    chmod 0440 /dev/amzn_lcr
+    chown system system /dev/amzn_lcr
+
+    chmod 0440 /dev/minerva_metrics
+    chown system system /dev/minerva_metrics
+
+    chmod 0440 /dev/vital_metrics
+    chown system system /dev/vital_metrics
+
+service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
+    class late_start
+    disabled
+
+# charge Top-off mode
+on property:vendor.bcm.pulldown_toc=4300
+    write /sys/devices/platform/charger/top_off_mode 1
+
+on property:vendor.bcm.pulldown_toc=4460
+    write /sys/devices/platform/charger/top_off_mode 0
+
+# Battery Aging
+on property:vendor.bcm.batt_stress=4460
+    write /sys/devices/platform/soc/11d71000.i2c/i2c-4/4-0034/11d71000.i2c:mt6375@34:mtk-gauge/disable_aging_zcv 1
+on property:vendor.bcm.batt_stress=4350
+    write /sys/devices/platform/soc/11d71000.i2c/i2c-4/4-0034/11d71000.i2c:mt6375@34:mtk-gauge/use_aging_zcv 1
+on property:vendor.bcm.batt_stress=4000
+    write /sys/devices/platform/soc/11d71000.i2c/i2c-4/4-0034/11d71000.i2c:mt6375@34:mtk-gauge/use_aging_zcv 2
+
+service dha_self_test /vendor/bin/amzn_dha_self_test.sh
+    user keystore
+    group keystore drmrpc readproc system
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start dha_self_test
+
+
+# start mmstat
+on property:sys.boot_completed=1
+    mkdir /sys/kernel/tracing/instances/mmstat 711
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
+    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
+    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
+
+service insmod_usbnet /vendor/bin/init_usbnet.sh
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+    task_profiles ServiceCapacityLow
+
+on property:sys.boot_completed=1
+    start insmod_usbnet
+
+on boot
+    write /sys/devices/platform/charger/fast_chg_indicator 4
+
+on charger
+    write /sys/devices/platform/charger/fast_chg_indicator 4
+
+# Enable charging
+on property:vendor.bcm.disable_charging.enabled=0
+    write /sys/devices/platform/charger/bcm_flag 0
+
+# Disable charging for charge timer timeout
+on property:vendor.bcm.disable_charging.enabled=charge_timer
+    write /sys/devices/platform/charger/bcm_flag charge_timer
+
+# Disable charging for secondary thermal detection is tripped
+on property:vendor.bcm.disable_charging.enabled=secondary_thermal
+    write /sys/devices/platform/charger/bcm_flag secondary_thermal
+
+# Overwride vendor.health-default for disable default
+service vendor.health-default /vendor/bin/hw/android.hardware.health-service.example
+    class hal
+    user system
+    group system
+    capabilities WAKE_ALARM BLOCK_SUSPEND
+    file /dev/kmsg w
+    disabled
+    override
+
+# Touch gesture_wakeup
+on property:vendor.touch_gesture_wakeup=1
+    write /sys/touchscreen/link_input_dev/gesture_wakeup 1
+
+on property:vendor.touch_gesture_wakeup=0
+    write /sys/touchscreen/link_input_dev/gesture_wakeup 0
+
+# Overwride vendor.charger for disable default
+service vendor.charger /vendor/bin/hw/android.hardware.health-service.example --charger
+    class charger
+    seclabel u:r:charger_vendor:s0
+    user system
+    group system wakelock input
+    capabilities SYS_BOOT
+    file /dev/kmsg w
+    file /sys/fs/pstore/console-ramoops-0 r
+    file /sys/fs/pstore/console-ramoops r
+    file /proc/last_kmsg r
+    disabled
+    override
+
+on property:vendor.all.modules.ready=1
+   start vendor.health-default
+
+on property:ro.bootmode=charger && property:vendor.all.modules.ready=1 && property:vendor.fuelgauged.ready=1
+   start vendor.charger
+   write /proc/mtk_lpm/cpuidle/boot_flag 1
+
+# Automatically turn on aal function when playing videos
+on property:vendor.hwc.video_mode=1
+    exec /vendor/bin/hw/hidl_aal_client 2
+on property:vendor.hwc.video_mode=0
+    exec /vendor/bin/hw/hidl_aal_client 0
+
+on property:debug.power.shipmode.enable=1
+    write /sys/devices/platform/soc/11d71000.i2c/i2c-4/4-0034/11d71000.i2c:mt6375@34:chg/shipping_mode 5526789
+
+# Attestation specific properties
+on early-init && property:ro.boot.product.hardware.sku=base
+     setprop ro.product.model_for_attestation ATTQWI
+     setprop ro.product.brand_for_attestation Amazon
+     setprop ro.product.name_for_attestation turquoise
+     setprop ro.product.device_for_attestation turquoise
+     setprop ro.product.manufacturer_for_attestation Amazon
+
+on early-init && property:ro.boot.product.hardware.sku=upsell
+     setprop ro.product.model_for_attestation ATTQUWI
+     setprop ro.product.brand_for_attestation Amazon
+     setprop ro.product.name_for_attestation turquoise
+     setprop ro.product.device_for_attestation turquoise
+     setprop ro.product.manufacturer_for_attestation Amazon

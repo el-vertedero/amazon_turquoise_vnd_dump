@@ -1,0 +1,9 @@
+
+<!-- helloworld/amazon.hardware.helloworld-service.xml -->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>amazon.hardware.connectivity</name>
+        <version>1</version>
+        <fqname>IConnectivity/default</fqname>
+    </hal>
+</manifest>

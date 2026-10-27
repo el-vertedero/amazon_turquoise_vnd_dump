@@ -1,0 +1,21 @@
+#
+# Copyright (c) 2020 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+on post-fs-data
+    mkdir /data/vendor/bcm/ 0770 system system
+    mkdir /mnt/vendor/nvdata/bcm/ 0770 system system
+
+service bcm_main /vendor/bin/bcm_main
+    group system
+    disabled
+
+# Start after boot to ensure MTK gauge is ready to receive derating messages
+on property:sys.boot_completed=1
+    exec - root root -- /system/bin/log -t bcm_init "Starting service"
+    start bcm_main
+
+# Run in Power Off Charging Mode (POCM) after sysfs is ready
+on property:ro.bootmode=charger && property:vendor.all.modules.ready=1 && property:vendor.fuelgauged.ready=1
+    start bcm_main

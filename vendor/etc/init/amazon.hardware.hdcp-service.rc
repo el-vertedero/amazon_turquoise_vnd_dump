@@ -1,0 +1,12 @@
+service vendor.drm-hdcp-hal /vendor/bin/hw/amazon.hardware.hdcp-service
+    class hal
+    user media
+    group media mediadrm drmrpc system
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh
+    disabled
+
+
+on property:sys.boot_completed=1
+    start vendor.drm-hdcp-hal
+

@@ -1,0 +1,7 @@
+on post-fs-data
+    mkdir /data/vendor/battery_logger/ 0770 system system
+
+service FosHighResolutionBatteryLevelLog /vendor/bin/battery_logger
+    class late_start
+    user system
+    group system

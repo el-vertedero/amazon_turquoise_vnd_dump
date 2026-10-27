@@ -1,0 +1,12 @@
+service platform_health_service /vendor/bin/platform_health_service
+    class main
+    user system
+    group system
+    disabled
+
+on property:sys.boot_completed=1
+    setprop vendor.serialno ${ro.boot.serialno}
+    start platform_health_service
+
+on post-fs-data
+    mkdir /data/vendor/platform_health 0774 system system

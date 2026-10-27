@@ -1,0 +1,10 @@
+service vendordropbox_utils /vendor/bin/vendordropbox_utils
+    class main
+    user shell
+    group system root shell
+    oneshot
+    disabled
+
+
+on property:vendor.amazon.dropbox.store=enable && property:ro.boot.unlocked_kernel=true
+    start vendordropbox_utils

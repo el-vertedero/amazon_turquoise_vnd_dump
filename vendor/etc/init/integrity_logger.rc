@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2019-2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+service integrity_logger /vendor/bin/integrity_logger
+    user system
+    group system wakelock
+    disabled
+
+on property:sys.boot_completed=1
+    exec - root root -- /system/bin/log -t integrity_module_init "Starting service"
+    start integrity_logger
+
+# Run in Power Off Charging Mode (POCM) after sysfs is ready
+on property:ro.bootmode=charger && property:vendor.all.modules.ready=1 && property:vendor.fuelgauged.ready=1
+    start integrity_logger

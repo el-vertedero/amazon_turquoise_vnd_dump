@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<displayConfiguration>
+    <screenBrightnessMap>
+        <point>
+            <value>0.0</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>490.0</nits>
+        </point>
+    </screenBrightnessMap>
+
+    <thermalThrottling>
+       <refreshRateThrottlingMap>
+           <refreshRateThrottlingPoint>
+               <thermalStatus>light</thermalStatus>
+               <refreshRateRange>
+                  <minimum>0</minimum>
+                  <maximum>60</maximum>
+                </refreshRateRange>
+           </refreshRateThrottlingPoint>
+           <refreshRateThrottlingPoint>
+               <thermalStatus>moderate</thermalStatus>
+               <refreshRateRange>
+                  <minimum>0</minimum>
+                  <maximum>60</maximum>
+                </refreshRateRange>
+           </refreshRateThrottlingPoint>
+           <refreshRateThrottlingPoint>
+               <thermalStatus>severe</thermalStatus>
+               <refreshRateRange>
+                  <minimum>0</minimum>
+                  <maximum>60</maximum>
+                </refreshRateRange>
+           </refreshRateThrottlingPoint>
+           <refreshRateThrottlingPoint>
+               <thermalStatus>critical</thermalStatus>
+               <refreshRateRange>
+                  <minimum>0</minimum>
+                  <maximum>60</maximum>
+                </refreshRateRange>
+           </refreshRateThrottlingPoint>
+           <refreshRateThrottlingPoint>
+               <thermalStatus>emergency</thermalStatus>
+               <refreshRateRange>
+                  <minimum>0</minimum>
+                  <maximum>60</maximum>
+                </refreshRateRange>
+           </refreshRateThrottlingPoint>
+       </refreshRateThrottlingMap>
+     </thermalThrottling>
+</displayConfiguration>

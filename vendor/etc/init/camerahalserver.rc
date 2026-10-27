@@ -1,0 +1,11 @@
+service camerahalserver /vendor/bin/hw/camerahalserver
+    class main
+    user cameraserver
+    group audio camera input drmrpc sdcard_rw system media graphics
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles CameraServiceCapacity MaxPerformance
+    disabled
+
+on property:vendor.camera.drv.dev.ready=1
+    start camerahalserver

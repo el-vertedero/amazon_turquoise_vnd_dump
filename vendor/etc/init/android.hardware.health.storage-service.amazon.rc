@@ -1,0 +1,8 @@
+service vendor.health-amzn /vendor/bin/hw/android.hardware.health.storage-service.amazon
+    interface aidl android.hardware.health.IHealth/storage
+    oneshot
+    disabled
+    class hal
+    user system
+    group system
+    capabilities SYS_RAWIO

@@ -1,0 +1,6 @@
+service vendor.aas-service-default /vendor/bin/hw/amazon.hardware.aas-service
+    interface aidl amazon.hardware.aas.IAudioAlgoService/default
+    class hal
+    user system
+    group system
+    onrestart restart vendor.audio-hal

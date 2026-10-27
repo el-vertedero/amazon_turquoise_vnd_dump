@@ -1,0 +1,115 @@
+## AOSP animation
+
+# animation: num_cycles, first_frame_repeats, animation_file
+animation: 5 2 charger/battery_scale
+
+# percent_display: text_percent_pos_x, text_percent_pos_y, color_r, color_g, color_b, color_a, font_file
+# percent_display: c c 255 255 255 255 charger/main_font
+
+# clock_display: text_percent_pos_x, text_percent_pos_y, color_r, color_g, color_b, color_a, font_file
+# clock_display: c 500 255 255 255 255 charger/main_font
+
+fail: charger/battery_fail
+
+# frame: disp_time min_level max_level
+frame: 1000 0 0 # 0
+frame: 1000 1 1 # 1
+frame: 1000 2 2 # 2
+frame: 1000 3 3 # 3
+frame: 1000 4 4 # 4
+frame: 1000 5 5 # 5
+frame: 1000 6 6 # 6
+frame: 1000 7 7 # 7
+frame: 1000 8 8 # 8
+frame: 1000 9 9 # 9
+frame: 1000 10 10 # 10
+frame: 1000 11 11 # 11
+frame: 1000 12 12 # 12
+frame: 1000 13 13 # 13
+frame: 1000 14 14 # 14
+frame: 1000 15 15 # 15
+frame: 1000 16 16 # 16
+frame: 1000 17 17 # 17
+frame: 1000 18 18 # 18
+frame: 1000 19 19 # 19
+frame: 1000 20 20 # 20
+frame: 1000 21 21 # 21
+frame: 1000 22 22 # 22
+frame: 1000 23 23 # 23
+frame: 1000 24 24 # 24
+frame: 1000 25 25 # 25
+frame: 1000 26 26 # 26
+frame: 1000 27 27 # 27
+frame: 1000 28 28 # 28
+frame: 1000 29 29 # 29
+frame: 1000 30 30 # 30
+frame: 1000 31 31 # 31
+frame: 1000 32 32 # 32
+frame: 1000 33 33 # 33
+frame: 1000 34 34 # 34
+frame: 1000 35 35 # 35
+frame: 1000 36 36 # 36
+frame: 1000 37 37 # 37
+frame: 1000 38 38 # 38
+frame: 1000 39 39 # 39
+frame: 1000 40 40 # 40
+frame: 1000 41 41 # 41
+frame: 1000 42 42 # 42
+frame: 1000 43 43 # 43
+frame: 1000 44 44 # 44
+frame: 1000 45 45 # 45
+frame: 1000 46 46 # 46
+frame: 1000 47 47 # 47
+frame: 1000 48 48 # 48
+frame: 1000 49 49 # 49
+frame: 1000 50 50 # 50
+frame: 1000 51 51 # 51
+frame: 1000 52 52 # 52
+frame: 1000 53 53 # 53
+frame: 1000 54 54 # 54
+frame: 1000 55 55 # 55
+frame: 1000 56 56 # 56
+frame: 1000 57 57 # 57
+frame: 1000 58 58 # 58
+frame: 1000 59 59 # 59
+frame: 1000 60 60 # 60
+frame: 1000 61 61 # 61
+frame: 1000 62 62 # 62
+frame: 1000 63 63 # 63
+frame: 1000 64 64 # 64
+frame: 1000 65 65 # 65
+frame: 1000 66 66 # 66
+frame: 1000 67 67 # 67
+frame: 1000 68 68 # 68
+frame: 1000 69 69 # 69
+frame: 1000 70 70 # 70
+frame: 1000 71 71 # 71
+frame: 1000 72 72 # 72
+frame: 1000 73 73 # 73
+frame: 1000 74 74 # 74
+frame: 1000 75 75 # 75
+frame: 1000 76 76 # 76
+frame: 1000 77 77 # 77
+frame: 1000 78 78 # 78
+frame: 1000 79 79 # 79
+frame: 1000 80 80 # 80
+frame: 1000 81 81 # 81
+frame: 1000 82 82 # 82
+frame: 1000 83 83 # 83
+frame: 1000 84 84 # 84
+frame: 1000 85 85 # 85
+frame: 1000 86 86 # 86
+frame: 1000 87 87 # 87
+frame: 1000 88 88 # 88
+frame: 1000 89 89 # 89
+frame: 1000 90 90 # 90
+frame: 1000 91 91 # 91
+frame: 1000 92 92 # 92
+frame: 1000 93 93 # 93
+frame: 1000 94 94 # 94
+frame: 1000 95 95 # 95
+frame: 1000 96 96 # 96
+frame: 1000 97 97 # 97
+frame: 1000 98 98 # 98
+frame: 1000 99 99 # 99
+frame: 1000 100 100 # 100

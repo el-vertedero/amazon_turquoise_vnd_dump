@@ -1,0 +1,10 @@
+on post-fs-data
+    mkdir /data/vendor/vendordropbox 0770 system system
+
+service vendor.dropbox /vendor/bin/hw/amazon.hardware.vendordropbox-service
+    interface aidl amazon.hardware.vendordropbox.IVendorDropBox/default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled

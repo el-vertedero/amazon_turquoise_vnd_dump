@@ -1,0 +1,12 @@
+#
+# Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+service vendor.dumpstate-1-1 /vendor/bin/hw/android.hardware.dumpstate-service.amazon
+    class main
+    user system
+    group system
+    interface aidl android.hardware.dumpstate.IDumpstateDevice/default
+    oneshot
+    disabled

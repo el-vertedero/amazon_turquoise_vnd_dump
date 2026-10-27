@@ -1,0 +1,12 @@
+#
+# Copyright (c) 2026 Amazon.com, Inc. or its affiliates. All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+#
+
+# powerpolicy/amazon.hardware.powerpolicy.powerpolicy-service.rc
+service powerpolicy /vendor/bin/hw/amazon.hardware.powerpolicy-service
+        interface aidl amazon.hardware.powerpolicy.IAmazonPowerPolicyServer/default
+        class hal
+        user system
+        group system

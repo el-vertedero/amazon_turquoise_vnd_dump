@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONTABLE>
+    <CMD name="PERF_RES_GPU_GED_LOADING_BASE_DVFS_STEP" id="0x00c0c300">
+        <Entry path="/sys/kernel/ged/hal/loading_base_dvfs_step"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>25855</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>4</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_PREFER_IDLE_FG" id="0x01404100">
+        <Entry path="/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_PREFER_IDLE_BG" id="0x01404200">
+        <Entry path="/dev/cpuctl/background/cpu.uclamp.latency_sensitive"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_PREFER_IDLE_TA" id="0x01404300">
+        <Entry path="/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_PREFER_IDLE_RT" id="0x01404400">
+        <Entry path="/dev/cpuctl/rt/cpu.uclamp.latency_sensitive"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_PREFER_IDLE_SYS" id="0x01404600">
+        <Entry path="/dev/cpuctl/system/cpu.uclamp.latency_sensitive"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_PREFER_IDLE_SYSBG" id="0x01404700">
+        <Entry path="/dev/cpuctl/system-background/cpu.uclamp.latency_sensitive"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MIN_FG" id="0x01408100">
+        <Entry path="/dev/cpuctl/foreground/cpu.uclamp.min"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MIN_BG" id="0x01408200">
+        <Entry path="/dev/cpuctl/background/cpu.uclamp.min"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MIN_TA" id="0x01408300">
+        <Entry path="/dev/cpuctl/top-app/cpu.uclamp.min"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MIN_RT" id="0x01408400">
+        <Entry path="/dev/cpuctl/rt/cpu.uclamp.min"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MIN_SYS" id="0x01408500">
+        <Entry path="/dev/cpuctl/system/cpu.uclamp.min"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MIN_SYSBG" id="0x01408c00">
+        <Entry path="/dev/cpuctl/system-background/cpu.uclamp.min"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MAX_FG" id="0x01408700">
+        <Entry path="/dev/cpuctl/foreground/cpu.uclamp.max"></Entry>
+        <Compare>less</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>100</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MAX_BG" id="0x01408800">
+        <Entry path="/dev/cpuctl/background/cpu.uclamp.max"></Entry>
+        <Compare>less</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>100</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MAX_TA" id="0x01408900">
+        <Entry path="/dev/cpuctl/top-app/cpu.uclamp.max"></Entry>
+        <Compare>less</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>100</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MAX_RT" id="0x01408a00">
+        <Entry path="/dev/cpuctl/rt/cpu.uclamp.max"></Entry>
+        <Compare>less</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>100</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MAX_SYS" id="0x01408b00">
+        <Entry path="/dev/cpuctl/system/cpu.uclamp.max"></Entry>
+        <Compare>less</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>100</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_SCHED_UCLAMP_MAX_SYSBG" id="0x01408d00">
+        <Entry path="/dev/cpuctl/system-background/cpu.uclamp.max"></Entry>
+        <Compare>less</Compare>
+        <MaxValue>100</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>100</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_PERF_TASK_TURBO" id="0x0300c000">
+        <Entry path="/sys/module/task_turbo/parameters/feats"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>15</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+        <InitWrite>1</InitWrite>
+    </CMD>
+    <CMD name="PERF_RES_GPU_GED_MARGIN_MODE" id="0x00c0c100">
+        <Entry path="/sys/kernel/ged/hal/dvfs_margin_value"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>110</MaxValue>
+        <MinValue>10</MinValue>
+        <DefaultValue>10</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" id="0x00c0c200">
+        <Entry path="/sys/kernel/ged/hal/timer_base_dvfs_margin"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>80</MaxValue>
+        <MinValue>1</MinValue>
+        <DefaultValue>30</DefaultValue>
+    </CMD>
+    <CMD name="PERF_RES_DISP_IDLE_TIME" id="0x0240C000">
+        <Entry path="/proc/displowpower/idletime"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1000000</MaxValue>
+        <MinValue>33</MinValue>
+    </CMD>
+</CONTABLE>

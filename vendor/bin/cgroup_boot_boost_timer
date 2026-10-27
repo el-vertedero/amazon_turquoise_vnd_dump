@@ -1,0 +1,6 @@
+#!/vendor/bin/sh
+# Copyright 2026 Amazon.com, Inc. or its affiliates. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Boot boost timer service - delays 60s to trigger cgroup restoration
+sleep 60

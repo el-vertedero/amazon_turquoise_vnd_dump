@@ -1,0 +1,20 @@
+#
+# Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+on post-fs-data
+    mkdir /mnt/vendor/nvdata/integrity/ 0770 system system
+
+service integrity_listener /vendor/bin/integrity_listener
+    user system
+    group system input
+    disabled
+
+on property:sys.boot_completed=1
+    exec - root root -- /system/bin/log -t integrity_listener_init "Starting service"
+    start integrity_listener
+
+# Run in Power Off Charging Mode (POCM) after sysfs is ready
+on property:ro.bootmode=charger && property:vendor.all.modules.ready=1 && property:vendor.fuelgauged.ready=1
+    start integrity_listener

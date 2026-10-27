@@ -1,0 +1,6 @@
+service fireosdha /vendor/bin/hw/amazon.hardware.fireosdha-service
+        interface aidl amazon.hardware.fireosdha2.IFireOsDha/default
+        class hal
+        user keystore
+        group keystore drmrpc readproc
+

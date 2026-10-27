@@ -1,0 +1,8 @@
+<!-- vendordropbox/amazon.hardware.vendordropbox-service.xml -->
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>amazon.hardware.vendordropbox</name>
+        <version>1</version>
+        <fqname>IVendorDropBox/default</fqname>
+    </hal>
+</manifest>

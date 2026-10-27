@@ -1,0 +1,10 @@
+# connectivity/amazon.hardware.connectivity-service.rc
+on property:sys.boot_completed=1
+    start connectivity
+
+service connectivity /vendor/bin/hw/amazon.hardware.connectivity-service
+        interface aidl amazon.hardware.connectivity.IConnectivity/default
+        class hal
+        user root
+        group root system
+        disabled
