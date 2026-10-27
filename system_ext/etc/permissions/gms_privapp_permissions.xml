@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<!--
+This XML file declares which privileged permissions should be granted to privileged
+applications in /system_ext on GMS or Google-branded devices.
+Allows additional privapp permissions missed to be included from vendor/partner_gms.
+-->
+<permissions>
+    <privapp-permissions package="com.android.emergency">
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+    </privapp-permissions>
+    <privapp-permissions package="com.google.android.googlequicksearchbox">
+        <permission name="android.permission.ACCESS_COMPUTER_CONTROL" />
+    </privapp-permissions>
+    <privapp-permissions package="com.google.ambient.streaming">
+        <permission name="android.permission.READ_REMOTE_TASKS" />
+        <permission name="android.permission.REQUEST_TASK_HANDOFF" />
+    </privapp-permissions>
+</permissions>

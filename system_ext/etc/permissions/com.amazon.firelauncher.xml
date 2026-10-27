@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<permissions>
+    <hidden-api-whitelisted-app package="com.amazon.firelauncher"/>
+    <privapp-permissions package="com.amazon.firelauncher">
+        <permission name="android.permission.ALLOW_SLIPPERY_TOUCHES"/>
+        <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.ACCESS_SHORTCUTS"/>
+        <permission name="android.permission.ACCESS_HIDDEN_PROFILES_FULL"/>
+        <permission name="android.permission.DUMP"/>
+        <!-- Below permission are required for FireLauncher library integration -->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <!-- Used for disabling/enabling several components in child profiles-->
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <!-- Amazon Kids modifies device's configuration settings in child profiles -->
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+         <!-- Needed by scheduling periodic tasks at the exact time, suce as checking VPC state  -->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <permission name="android.permission.REQUEST_TASK_HANDOFF"/>
+        <permission name="android.permission.READ_REMOTE_TASKS"/>
+        <!-- Needed by Amazon Kids to prevent usage of PlayStore without a GSA  -->
+        <permission name="com.amazon.tahoe.permission.VERIFY_PLAY_STORE_LAUNCH"/>
+    </privapp-permissions>
+</permissions>

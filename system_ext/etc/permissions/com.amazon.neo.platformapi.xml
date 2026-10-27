@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<permissions xmlns:android="http://schemas.android.com/apk/res/android">
+    <library name="com.amazon.neo.platformapi" file="/system_ext/framework/com.amazon.neo.platformapi.jar"/>
+
+    <permission name="com.amazon.neo.platformapi.GET_SEINFO" android:protectionLevel="signature|privileged"/>
+    <permission name="com.amazon.neo.platformapi.GET_APPCONTEXT" android:protectionLevel="signature|privileged"/>
+</permissions>

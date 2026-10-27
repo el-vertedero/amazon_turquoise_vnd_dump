@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.settings">
+        <!-- Permission required for supporting dynamic ingress in ATS -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <!-- Permission required for writing secure keys when customers
+        update their preferences like hover indicator, show word suggestions, etc -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>
