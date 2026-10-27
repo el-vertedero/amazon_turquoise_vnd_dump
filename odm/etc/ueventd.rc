@@ -1,0 +1,7 @@
+#platform health
+/dev/amzn_lcr	0440	system	system
+/dev/minerva_metrics	0440	system	system
+/dev/vital_metrics	0440	system	system
+
+#fingerprint
+/dev/goodix_fp	0666	system	system
