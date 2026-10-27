@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.kindle.otter.oobe.forced.ota">
+        <!-- This permission is required by FOTA application to reboot the device after System update is completed. -->
+        <permission name="android.permission.REBOOT"/>
+        <!-- This permission allows FOTA to write its completion status (success or failure) to a secure setting that TabletMagpie monitors for failure recovery.-->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

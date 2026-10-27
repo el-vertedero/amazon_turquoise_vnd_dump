@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2026 Amazon.com, Inc. or its affiliates. All rights reserved.
+    PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.sneakpeek">
+        <!-- Required for bug report generation -->
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+</permissions>

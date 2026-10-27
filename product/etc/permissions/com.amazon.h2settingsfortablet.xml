@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.h2settingsfortablet">
+        <!-- H2Settings uses secure settings as persistent storage for system-wide configurations.
+             APIs: Settings.Secure.getString/getInt() for reading user roles, Alexa settings.
+                  Settings.Secure.putString/putInt() for modifying system configurations.
+             Used in: System settings configuration and feature management -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+
+        <!-- Required for managing user profiles and their restrictions
+             APIs: UserManager.isAdminUser(), getUserRestrictionSource()
+             Used in: User profile management and restrictions -->
+        <permission name="android.permission.MANAGE_USERS" />
+    </privapp-permissions>
+</permissions>

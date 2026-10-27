@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2022 - 2025 Amazon.com, Inc. or its affiliates. All rights reserved.
+  PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.mp3">
+        <!--
+          This permission is used by the download storage manager.
+        -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!--
+          This permission is used to get the DSN. We use the DSN across core functionalities of the app
+          including playback and send it as part of requests to various services.
+        -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+</permissions>

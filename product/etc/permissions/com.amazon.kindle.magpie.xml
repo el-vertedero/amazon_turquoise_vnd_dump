@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.kindle.magpie">
+        <!-- required by MAP: https://w.amazon.com/bin/view/IdentityServices/Mobile/MAP/PhoenixSDK -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- required to set settings related to metrics metadata etc, shared with other applications part of setup flow -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- required to update the device locale in Magpie Welcome Screen -->
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <!-- required to retrieve device enterprise provisioning state and to call android.os.UserManager# isMainUser and isAdminUser
+        to differentiate between Android users(Primary/Secondary/Child)-->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <!-- This permission is required by OSU to reboot the device after System update is completed.-->
+        <permission name="android.permission.REBOOT"/>
+        <!-- This permission is required to check for supervised accounts -->
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+        <!-- Required to disable status bar during GSA blocking popup (AVA compliance) -->
+        <permission name="android.permission.STATUS_BAR" />
+        <!-- Required to change navigation bar overlay (3-button nav) -->
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES" />
+        <!-- Required to bypass BAL restrictions when bringing GSA blocking popup back to front -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+</permissions>

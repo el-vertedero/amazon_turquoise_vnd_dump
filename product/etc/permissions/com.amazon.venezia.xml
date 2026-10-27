@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.venezia">
+        <!-- Write Secure and Global settings value. Appstore sets multiple Global and
+        Secure settings values related to customer preferences for app purchase. -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- Appstore requires permission to install 3P apps. -->
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <!-- Appstore requires permission to uninstall 3P apps. -->
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <!-- Appstore required this permission to ensure that there are no delays in any of our activity start requests,
+        even if they happen immediately after the user presses home. -->
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <!-- To detect if the demo CX is running -->
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <!-- Used for checking if a user is a child or an adult via UserManager -->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <!-- This permission allows calling Build.getSerial() to get DSN.
+        DSN is required for business metrics. -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- This permission required by MASClientPlatformManifest -->
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <!-- This helps to backup and restore the contents by connecting with AOSP & BAR -->
+        <permission name="android.permission.BACKUP"/>
+        <!-- Required for cross-user DDID (Device Descriptor ID) sharing on KH/Streamline
+        devices. Enables sendBroadcastAsUser(UserHandle.ALL) so the parent user can deliver
+        the device-level DDID to child profiles where MAP doesn't provision accounts.
+        Without this permission, app search fails in Kids profiles because
+        DeviceInfoContentProvider returns deviceDescriptorId=NULL. -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+</permissions>

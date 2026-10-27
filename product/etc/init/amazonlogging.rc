@@ -1,0 +1,19 @@
+
+on init
+    # Mount amz_logd node
+    mkdir /dev/amz_logd 0770 system system
+    mount tmpfs tmpfs /dev/amz_logd mode=0770,uid=1000,gid=1000,size=512K,context=u:object_r:amz_logd:s0
+
+on post-fs-data
+    # Create directory for amz_logd archive files
+    mkdir /data/amz_logd 0765 system system
+
+service amazonlogging /system/product/bin/amazonlogging
+    class main
+    user system
+    group system
+    priority 10
+    task_profiles ServiceCapacityLow
+
+on property:amazonlogging.restart=false
+    stop amazonlogging

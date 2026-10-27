@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.alexa.calendar.app">
+        <!-- Permission for API: Settings.Secure.putInt() to write Alexa T&C secure setting -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+</permissions>

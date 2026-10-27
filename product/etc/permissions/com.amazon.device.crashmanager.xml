@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <!-- CrashManager client uploads crash files files from FOS devices to cloud:S3 -->
+    <privapp-permissions package="com.amazon.device.crashmanager">
+        <!-- Needed to read crash files from dropbox - for getNextEntry() api -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <!-- Needed to read DSN of the device, DSN is crucial in the crash upload funtionlity, dsn
+             is added to the metadata of the crash files which is then indexed in the cloud service
+             to store these crash files -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <!-- This permission is introduced with SDK35 this is now required to access dropbox data
+             ref: developer.android.com/reference/android/os/DropBoxManager
+             ref: developer.android.com/reference/android/Manifest.permission#READ_DROPBOX_DATA -->
+        <permission name="android.permission.READ_DROPBOX_DATA" />
+        <!-- Needed to get ANROccurredProcessingStarted information from StatsD-->
+        <permission name="android.permission.DUMP" />
+    </privapp-permissions>
+</permissions>

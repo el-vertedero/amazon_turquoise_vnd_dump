@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.settings.systemupdates">
+        <!--
+            This permission is required by SystemUpdatesUI application to reboot the device
+            into the new version upon user clicking the reboot button. The reboot button will
+            appear on the UI once the system update is installed into the secondary partition.
+        -->
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+</permissions>

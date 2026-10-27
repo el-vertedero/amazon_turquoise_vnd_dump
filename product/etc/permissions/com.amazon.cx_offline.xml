@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024-2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.cx_offline">
+        <!-- To retrieve device serial number for Demo Debug Menu (simplifies in-feild debugging) -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- To hide navigation and status bars on demo devices -->
+        <permission name="android.permission.STATUS_BAR"/>
+        <!-- To write to Secure Settings for setting demo flags -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

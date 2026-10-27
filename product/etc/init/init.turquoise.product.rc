@@ -1,0 +1,24 @@
+# device/amazon/turquoise/init.turquoise.product.rc
+
+# Turquoise-specific cached apps configuration
+on early-init
+    setprop ro.product.cached_nokill_until_boot false
+    setprop ro.product.cached_nokill_delay 0
+
+# 8GB SKU configuration
+on property:ro.boot.product.hardware.ramsize=8
+    setprop ro.product.cached_process_limit 128
+
+# 4GB SKU configuration
+on property:ro.boot.product.hardware.ramsize=4
+    setprop ro.product.cached_process_limit 16
+
+on property:ro.product.amazon.ket=1
+    setprop ro.amazon.mktg.os "Amazon Kids Tablet UI 16.1.10"
+    setprop ro.config.wallpaper /product/wallpaper/image/ket_wallpaper.jpg
+    setprop ro.oem.key1 KET_1001
+
+on property:ro.product.amazon.ket=0
+    setprop ro.amazon.mktg.os "Alexa Tablet UI 16.1.10"
+    setprop ro.config.wallpaper /product/wallpaper/image/nket_wallpaper.jpg
+    setprop ro.oem.key1 NKET_1001

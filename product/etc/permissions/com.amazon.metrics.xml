@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <!-- Metrics service on device to extract data from Statsd-->
+    <privapp-permissions package="com.amazon.metrics">
+        <!-- Required to run a background service common across all profiles.-->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <!-- Required to register and read configurations with statsd via statsdManager.-->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <!-- Required to register and read configurations with statsd via statsdManager.-->
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+</permissions>

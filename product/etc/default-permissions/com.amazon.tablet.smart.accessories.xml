@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<exceptions>
+    <exception package="com.amazon.tablet.smart.accessories">
+        <!-- Bluetooth permission required for Enabling Bluetooth in a Stylus Settings pop-up -->
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </exception>
+</exceptions>

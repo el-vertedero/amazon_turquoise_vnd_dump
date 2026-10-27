@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<!-- The permissions needed by the com.amazon.appverification -->
+<permissions>
+    <privapp-permissions package="com.amazon.appverification">
+        <!-- Allows the application to uninstall rogue apks from device -->
+        <permission name="android.permission.DELETE_PACKAGES"/>
+
+        <!-- Allows the application to read protected flag
+             android.content.pm.PackageManager.MATCH_ANY_USER -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+
+        <!-- Allow the application to write secure settings -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+
+        <!-- Need to start a service from background that verifies application
+             after installation, sync arcus config and records metrics -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+
+        <!-- Needed for reading privileged device identifiers required for Arcus Sync -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+        <!-- Allows disabling apps components if uninstall fails -->
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+
+        <!-- Allows the app to hold the role of package verifier -->
+        <permission name="android.permission.PACKAGE_VERIFICATION_AGENT" />
+
+    </privapp-permissions>
+</permissions>

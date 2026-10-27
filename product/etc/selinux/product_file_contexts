@@ -1,0 +1,7 @@
+/data/hwr_assets(/.*)?                                 u:object_r:hwr_asset_data_file:s0
+/(product|system/product)/bin/amznfpbd   u:object_r:amznfpbd_exec:s0
+/(product|system/product)/bin/amazonlogging        u:object_r:amazonlogging_exec:s0
+/data/amz_logd(/.*)?                               u:object_r:logging_data_file:s0
+/product/bin/neo-service-coordinator   u:object_r:neo-service-coordinator_exec:s0
+/product/bin/neo-init u:object_r:neo-init_exec:s0
+/product/bin/neo-init-runas u:object_r:runas_exec:s0

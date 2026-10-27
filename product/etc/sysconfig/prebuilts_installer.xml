@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<!-- Declare explicit installers for 2p apps to prevent Play Store from installing updates -->
+<config>
+    <update-ownership package="com.amazon.dee.app" installer="com.amazon.device.software.ota" />
+    <update-ownership package="com.amazon.kindle" installer="com.amazon.device.software.ota" />
+    <update-ownership package="com.amazon.mp3" installer="com.amazon.device.software.ota" />
+    <update-ownership package="com.amazon.windowshop" installer="com.amazon.device.software.ota" />
+</config>

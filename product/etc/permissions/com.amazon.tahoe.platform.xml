@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.tahoe.platform">
+        <!-- Required by silent uninstallation of apps -->
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <!-- Required to check if user has a Google Supervised Account -->
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+        <!-- Needed to get whether packages are hidden -->
+        <permission name="android.permission.MANAGE_USERS" />
+    </privapp-permissions>
+</permissions>

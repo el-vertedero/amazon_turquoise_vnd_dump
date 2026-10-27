@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+on post-fs-data
+   mkdir /data/hwr_assets 0707 nobody nobody
+   mkdir /data/hwr_assets/conf 0707 nobody nobody
+   mkdir /data/hwr_assets/resources 0707 nobody nobody
+   restorecon_recursive /data/hwr_assets
+

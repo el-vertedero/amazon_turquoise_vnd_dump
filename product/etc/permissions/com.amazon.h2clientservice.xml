@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.amazon.h2shared" 
+             file="/product/framework/com.amazon.h2shared.jar" 
+             dependency="com.amazon.identity.auth.device"/>
+    <library name="com.amazon.h2contracts" 
+             file="/product/framework/com.amazon.h2contracts.jar" 
+             dependency="com.amazon.identity.auth.device:com.amazon.h2shared"/>
+</permissions>

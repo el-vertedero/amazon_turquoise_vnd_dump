@@ -1,0 +1,8 @@
+ro.product.name=turquoise
+ro.com.google.clientidbase=android-amazon
+ro.com.google.clientidbase.ms=android-amazon-a1-terr1-rao2a
+ro.com.google.clientidbase.cr=android-amazon-a1-terr1-rco2ba
+ro.com.google.clientidbase.ms.a2=android-amazon-a2-terr1-rao2a
+ro.com.google.clientidbase.pg2=android-amazon-mfa-srn1
+bluetooth.device.default_name=Alexa Tablet 11
+ro.product.amazon.ket=0

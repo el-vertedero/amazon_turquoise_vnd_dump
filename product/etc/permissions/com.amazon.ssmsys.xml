@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+   Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions  package="com.amazon.ssmsys">
+        <!-- Required for the FIX button provided to users
+        in case of network-bounce failure and prolonged disconnect -->
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <!-- Required to display data monitoring information in advanced tab -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <!-- Required for the FIX button provided to users
+        in case of network-bounce failure and prolonged disconnect -->
+        <permission name="android.permission.REBOOT"/>
+        <!-- Required to display MAC address in advanced tab -->
+        <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+        <!-- Required to route users to the NSA permission page -->
+        <permission name="android.permission.LAUNCH_PERMISSION_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

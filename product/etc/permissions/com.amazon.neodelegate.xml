@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<permissions>
+    <privapp-permissions package="com.amazon.neodelegate">
+        <!-- Needed for Build.getSerial(), which is required by native services -->
+        <!-- that are in the allow-list on NEO Framework -->
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- Permission required to call API Context.sendBroadcastAsUser(...), which is -->
+        <!-- necessary for Multi-User support on NEO Framework -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <!-- Permission required to call API AmazonUserManager.startActivityForProfile(...), -->
+        <!-- which is necessary for Multi-User support on NEO Framework -->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <!-- Permission required to call API connectivityManager.getActiveNetwork(); -->
+        <!-- for all UIDs (Dial service uses it) -->
+        <permission name="android.permission.NETWORK_FACTORY"/>
+        <!-- Permission required to call API getActivityService().getRunningAppProcesses(); -->
+        <!-- for all UIDs (Dial service uses it) -->
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <!-- Permission required for interact with Android secure setttings APIs -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- It is used to invoke AmazonAudioManager.getPackageInFocus() on the dependent -->
+        <!-- package CommonSpeechMiddleware_SpeechServiceUtil -->
+        <!-- NOTE:
+        	Do not uncomment this permission. On SL16 and on, adding this permission
+        	will trigger an MBA compliance on AOSP which requires an allow-list process
+        	to be filed. We are working with ILS team to get it removed altogether.
+        	In the meantime, we're removing it here for SL16.
+        
+        	Related Jiras:
+        	- https://issues.labcollab.net/browse/CONN-101018
+        	- https://issues.labcollab.net/browse/ACDC-29491
+        -->
+        <!--
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        -->
+        <!-- Permission is required to trigger CEC scanning -->
+        <!-- Nessesary to listen and send CEC messages -->
+        <permission name="android.permission.HDMI_CEC"/>
+        <!-- Permission required to receive ACTION_DISCOVERY broadcasts -->
+        <permission name="amazon.permission.ACTION_DISCOVERY_ACCESS"/>
+        <!-- Permission required to set Default picture profile to MQ, only request after SL16 -->
+        <permission name="android.permission.MANAGE_GLOBAL_PICTURE_QUALITY_SERVICE" />
+        <!-- Permission required to set Default sound profile to MQ, only request after SL16 -->
+        <permission name="android.permission.MANAGE_GLOBAL_SOUND_QUALITY_SERVICE" />
+        <!-- Required to call MediaSessionManager#addOnActiveSessionsChangedListener -->
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <!-- Required to call AlarmManager#setTimeZone -->
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <!-- Required to call AppOps.noteOpNoThrow() -->
+        <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+        <!-- Permission required to install APKs via Android's PackageInstaller APIs -->
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+</permissions>

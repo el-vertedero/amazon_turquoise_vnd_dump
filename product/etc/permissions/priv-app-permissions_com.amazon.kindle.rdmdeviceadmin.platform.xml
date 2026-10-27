@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+     PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.kindle.rdmdeviceadmin.platform">
+        <!-- This permission allows RDM Platform to start foreground services even
+        when the app is in background. This is required by RDM Platform to start
+        critical foreground services for remote device management operations without
+        user interaction.
+        -->
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <!-- This permission allows RDM Platform to schedule exact alarms.
+        -->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+        <!-- This permission allows RDM Platform to interact with other users on the device.
+        This is required for remote device management operations that need to access
+        resources across different user profiles on multi-user devices.
+        -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+</permissions>

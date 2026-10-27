@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<config>
+    <!-- To Enable GMS Game Dashboard -->
+    <feature name="android.software.game_service"/>
+    <feature name="com.google.android.feature.GMS_GAME_SERVICE" />
+</config>

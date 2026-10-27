@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2021 - 2024 Amazon.com, Inc. or its affiliates.  All rights reserved. -->
+<exceptions>
+    <exception package="com.amazon.imp">
+        <!-- Required for device serial number Build.getSerial()-->
+        <!-- Details can be found at: https://w.amazon.com/bin/view/Device_Management_Services/DeviceSerialNumber/-->
+        <permission name="android.permission.READ_PHONE_STATE" fixed="true"/>
+    </exception>
+</exceptions>

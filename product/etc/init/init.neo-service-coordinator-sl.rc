@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+on early-boot
+   start neo-coordinator
+
+
+service neo-coordinator /product/bin/neo-service-coordinator
+   user root
+   group root readproc system
+   onrestart restart neo-init
+

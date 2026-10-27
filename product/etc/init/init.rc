@@ -1,0 +1,9 @@
+# set the finally dtid with the ro.boot.config.type value
+on late-fs
+    setprop ro.product.config.type ${ro.boot.config.type}
+
+on property:ro.boot.factory.adb.enable=1
+    chmod 644 /mnt/vendor/nvdata/adbkey.pub
+    copy /mnt/vendor/nvdata/adbkey.pub /data/misc/adb/adb_keys
+    chmod 0640 /data/misc/adb/adb_keys
+    setprop persist.sys.usb.config mtp,adb

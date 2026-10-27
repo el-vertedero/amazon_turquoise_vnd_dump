@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<exceptions>
+    <exception package="com.amazon.tablet.voiceassistant">
+        <!-- Required to receive Bluetooth ACL/UUID broadcasts for AMA device detection -->
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+    </exception>
+</exceptions>

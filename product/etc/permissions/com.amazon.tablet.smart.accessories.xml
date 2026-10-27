@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.tablet.smart.accessories">
+        <!--
+            Used by to get device serial number to get the apps from the appstore.
+        -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- To indicate if the stylus tutorial has already been shown -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- To launch stylus tutorial activty when a stylus is connected -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+</permissions>

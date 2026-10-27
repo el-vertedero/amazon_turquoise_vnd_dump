@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.deviceadmin">
+        <!--
+            Required to check if the application needing scopes is priv-app.
+            ApplicationInfo#isPrivilegedApp API requires
+            priv-app permission android.permission.INSTALL_PACKAGES.
+            The API is utilized to check whether the app we are delegating scopes are 1P apps.
+        -->
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <!--
+            Required to set profile owners.
+            AmazonDeviceAdmin application would be the singular device admin application.
+            It would be holding Profile Owner priviledges on normal users for delegating scopes
+            and will provide Profile Owner priviledges to kids application for kids users.
+            android.permission.MANAGE_USERS is a priv-app permission required alongside
+            android.permission.MANAGE_DEVICE_ADMINS and
+            android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS which is acquired by role
+            android.app.role.DEVICE_POLICY_MANAGEMENT to set profile owners.
+
+            Design Doc: https://quip-amazon.com/0GfnAhLvlQxd/Design-Doc-Amazon-Device-Admin
+        -->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+</permissions>

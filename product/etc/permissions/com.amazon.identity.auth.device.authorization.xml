@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+   Copyright (c) 2022 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.identity.auth.device.authorization">
+        <!--  This permission is required by the foreground app so the background service can launch a UI activity, which is necessary for the LWA SSO workflow -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+</permissions>
+

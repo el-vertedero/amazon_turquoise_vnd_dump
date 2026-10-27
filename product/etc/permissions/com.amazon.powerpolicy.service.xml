@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.powerpolicy.service">
+        <!-- Required to enable/disable battery saver mode -->
+        <permission name="android.permission.POWER_SAVER"/>
+        <!-- Required to control device power modes -->
+        <permission name="android.permission.DEVICE_POWER"/>
+    </privapp-permissions>
+</permissions>

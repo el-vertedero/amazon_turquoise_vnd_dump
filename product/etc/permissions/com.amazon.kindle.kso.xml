@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.kindle.kso">
+        <!---Allows KSO to differentiate ad plans between users to allow for personalized ad plans -->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <!---Similar function to above, allows access to user information to differentiate users for ad planning -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <!---Allows KSO to write an android ID to the foreground profile in the case that the profile does not already
+         have one. This allows for a unique advertising id to measure campaign performance-->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!---Enabled KSO to access IMEI and DSN for metrics and logging. Allows for individual device attention -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- Enables KSO to launch intents at scheduled times to go with timed campaigns or ad plan switches -->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    </privapp-permissions>
+</permissions>

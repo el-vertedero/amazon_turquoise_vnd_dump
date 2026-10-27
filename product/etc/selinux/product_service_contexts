@@ -1,0 +1,5 @@
+amznfpbd               u:object_r:amznfpbd_service:s0
+amazonlogging               u:object_r:amazonlogging_service:s0
+neo-service-coordinator u:object_r:neo-service-coordinator_service:s0
+neo-service-coordinator-public u:object_r:neo-service-coordinator-public_service:s0
+neo-service-coordinator-internal u:object_r:neo-service-coordinator-internal_service:s0

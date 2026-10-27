@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<config>
+    <component-override package="com.android.storagemanager" >
+        <component class="com.android.storagemanager.deletionhelper.DeletionHelperActivity" enabled="false" />
+    </component-override>
+    <component-override package="com.amazon.dee.app" >
+        <!-- Disabling Floating Window for Classic Alexa -->
+        <component class="com.amazon.dee.app.tablet.ui.TabletAlexaUIActivity" enabled="false" />
+
+        <!-- Disabling all available widgets -->
+        <!-- Brazil package: AlexaMobileAndroidStayOrganized -->
+        <component class="com.amazon.alexa.stayorganized.ui.ShoppingListWidgetLarge" enabled="false" />
+        <component class="com.amazon.alexa.stayorganized.ui.calendar.CalendarWidgetProvider" enabled="false" />
+        <!-- Brazil package: AlexaMobileAndroidVoice -->
+        <component class="com.amazon.alexa.voice.ui.AskAlexaWidget" enabled="false" />
+        <!-- Brazil package: AlexaMobileAndroidPlatform -->
+        <component class="com.amazon.alexa.widget.QuickActionsWidget" enabled="false" />
+
+        <!-- Disabling the 'Ask Alexa' QS Tile -->
+        <!-- Brazil package: AlexaMobileAndroid -->
+        <component class="com.amazon.dee.app.services.quicksettings.AskAlexaTileService" enabled="false" />
+    </component-override>
+    <!-- Disable AOSP DocumentsUI from showing up in launcher -->
+    <component-override package="com.google.android.documentsui" >
+        <component class="com.android.documentsui.LauncherActivity" enabled="false" />
+        <component class="com.android.documentsui.ViewDownloadsActivity" enabled="false" />
+    </component-override>
+</config>

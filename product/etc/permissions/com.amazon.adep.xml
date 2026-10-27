@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.adep">
+        <!-- Required by NIMH (ADEP component that identifies and disables known malwares found on device) -->
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+</permissions>

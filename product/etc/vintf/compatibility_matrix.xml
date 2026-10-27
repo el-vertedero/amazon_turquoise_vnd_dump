@@ -1,0 +1,87 @@
+<!--
+    Input:
+        vendor/dolby/ds/service/aidl/impl/dax_framework_compatibility_matrix_aidl.xml
+        vendor/dolby/ds/service/hidl/dms/2.0/default/dax_framework_compatibility_matrix_hidl.xml
+        device/amazon/generic_tablet/generic_tablet_compatibility_matrix.202504.xml
+-->
+<compatibility-matrix version="9.0" type="framework" level="202504">
+    <hal format="aidl">
+        <name>amazon.hardware.aas</name>
+        <version>2</version>
+        <interface>
+            <name>IAudioAlgoService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>amazon.hardware.connectivity</name>
+        <interface>
+            <name>IConnectivity</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>amazon.hardware.fireosdha2</name>
+        <interface>
+            <name>IFireOsDha</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>amazon.hardware.fossupplicant</name>
+        <interface>
+            <name>IFosSupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>amazon.hardware.hdcp</name>
+        <interface>
+            <name>IAmazonHdcp</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>amazon.hardware.powerpolicy</name>
+        <interface>
+            <name>IAmazonPowerPolicyServer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>amazon.hardware.pq</name>
+        <interface>
+            <name>IAmazonPictureQuality</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>amazon.hardware.vendordropbox</name>
+        <interface>
+            <name>IVendorDropBox</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.dolby.dms</name>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.dolby.dms</name>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.dolby.hardware.dms</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

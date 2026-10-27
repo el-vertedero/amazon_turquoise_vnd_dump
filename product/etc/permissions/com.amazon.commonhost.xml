@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024-2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.commonhost">
+        <!-- The Espresso Shot service needs to disable broadcast receivers so that apps don't
+          start up at BOOT_COMPLETED. Espresso Shot will start up the app instead. -->
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+
+        <!-- The Cirrus service needs to call ArtManager API snapshotRuntimeProfile which
+          requires READ_RUNTIME_PROFILES and PACKAGE_USAGE_STATS permissions. Besides,
+          this API needs to query users and interact with user 0 from other uses, which
+          requires MANAGE_USERS and INTERACT_ACROSS_USER permissions. -->
+        <permission name="android.permission.READ_RUNTIME_PROFILES"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <!-- Required to enable WTF crash file creation-->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <!-- eMMC per-process metrics: emit via Minerva service -->
+        <permission name="amazon.permission.COLLECT_METRICS" />
+        <!-- GSA removal: query supervised Google accounts -->
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    </privapp-permissions>
+</permissions>

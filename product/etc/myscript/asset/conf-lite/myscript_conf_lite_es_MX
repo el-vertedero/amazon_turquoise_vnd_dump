@@ -1,0 +1,27 @@
+Bundle-Version: 1.0
+Bundle-Name: es_MX
+Configuration-Script:
+ AddResDir ../resources/
+
+Name: text
+Type: Text
+Configuration-Script:
+ AddResource es_MX/es_MX-ak-cur.lite.res
+ AddResource es_MX/es_MX-lk-text.lite.res
+ AddResource mul/mul-lk-english_secondary_1.res
+ EnableAlienCharacters
+ SetTextListSize 1
+ SetWordListSize 5
+ SetCharListSize 1
+
+# Superimposed configuration can only be used with a Text Recognizer instance
+Name: text-superimposed
+Type: Text
+Configuration-Script:
+ AddResource es_MX/es_MX-ak-superimposed.lite.res
+ AddResource es_MX/es_MX-lk-text.lite.res
+ AddResource mul/mul-lk-english_secondary_1.res
+ EnableAlienCharacters
+ SetTextListSize 1
+ SetWordListSize 5
+ SetCharListSize 1

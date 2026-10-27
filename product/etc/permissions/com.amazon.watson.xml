@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.watson">
+
+        <!-- This is required for starting service that downloads Handwriting Recognition
+         Language packs when required, fixed to prevent user from revoking permission.
+         If revoked, Hand Writing Recognition for new languages will fail. -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" fixed="true"/>
+    </privapp-permissions>
+</permissions>

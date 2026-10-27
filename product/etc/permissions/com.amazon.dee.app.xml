@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.dee.app">
+        <!-- Required to call Build.getSerial() to get DSN by MAP:
+         https://w.amazon.com/bin/view/IdentityServices/Mobile/MAP/PhoenixSDK -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- Required for the AlarmManager schedule Alarms-->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <!-- Required to dismiss temporary system dialogs-->
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+        <!-- Required to launch Alexa UI activities from background-->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <!-- Required to provide media context for smart actions features-->
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <!-- Required to enable audio ducking when Alexa is invoked over the lock screen-->
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <!-- Required to provide app usage context for smart actions features-->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+</permissions>

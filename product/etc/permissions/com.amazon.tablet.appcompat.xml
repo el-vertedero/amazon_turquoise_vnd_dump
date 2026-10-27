@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2026 Amazon.com, Inc. or its affiliates. All rights reserved.
+   PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<!-- The permissions needed by the com.amazon.tablet.appcompat -->
+<permissions>
+    <privapp-permissions package="com.amazon.tablet.appcompat">
+
+        <!-- Needed for reading privileged device identifiers required for Arcus Sync -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+    </privapp-permissions>
+</permissions>

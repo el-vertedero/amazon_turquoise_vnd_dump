@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.tablet.voiceassistant">
+        <!-- Listen to DSP hotword detection events -->
+        <permission name="android.permission.CAPTURE_AUDIO_HOTWORD"/>
+        <!-- To run Soundtrigger recognition in battery saver mode -->
+        <permission name="android.permission.SOUND_TRIGGER_RUN_IN_BATTERY_SAVER"/>
+        <!-- For integrating with SoundTrigger to set/get keyphrase models -->
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES" />
+        <!--
+            Used by dependency CommonSpeechMiddleware_SpeechServiceUtil
+            to get device serial number
+        -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <!--
+            To set Alexa and hands free related secure settings used to
+            indicate Alexa enablement status
+        -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!--
+            The below permissions are used to enable/disable Alexa across profiles.
+            Alexa is disabled on secondary and child profiles
+         -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+    </privapp-permissions>
+</permissions>

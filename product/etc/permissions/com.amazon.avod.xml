@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.avod">
+        <!-- Required to keep platform and app-level settings related to audio, video, subtitles and enable/disable download to SD card in sync -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- Required to schedule push notifications at exact times -->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <!-- Required to support Mobile Authentication Platform (MAP) https://tiny.amazon.com/pbfs8h8/wamazbinviewIdenMobiMAPPhoe -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- Required for launcher integration and kids app to start player from background on Android 15+ devices -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+</permissions>

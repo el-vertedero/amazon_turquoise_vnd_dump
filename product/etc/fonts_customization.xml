@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+   Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<fonts-modification version="1">
+    <!-- Adding Kindle Symbol font in default fallback stack -->
+    <family customizationType="new-locale-family" operation="append" lang="und-Zsym">
+        <font weight="400" style="normal">Kindle_Symbol.ttf</font>
+    </family>
+
+    <!-- Font family definition for webview for Amazon Ember. This would require CSS to reference the lowercase hypenated family names for ember-->
+    <family customizationType="new-named-family" name="amazon-ember">
+        <font weight="400" style="normal">Amazon-Ember-Regular.ttf</font>
+        <font weight="400" style="italic">Amazon-Ember-RegularItalic.ttf</font>
+        <font weight="700" style="normal">Amazon-Ember-Bold.ttf</font>
+        <font weight="700" style="italic">Amazon-Ember-BoldItalic.ttf</font>
+        <font weight="300" style="normal">Amazon-Ember-Light.ttf</font>
+        <font weight="300" style="italic">Amazon-Ember-LightItalic.ttf</font>
+        <font weight="100" style="normal">Amazon-Ember-Thin.ttf</font>
+        <font weight="100" style="italic">Amazon-Ember-ThinItalic.ttf</font>
+    </family>
+
+    <!-- Adding Amazon Ember Arabic font in default fallback stack -->
+    <family customizationType="new-locale-family" operation="append" lang="und-Arab">
+        <font weight="400" style="normal" fallbackFor="amazon-ember">AmazonEmberArabic_Rg.ttf</font>
+        <font weight="500" style="normal" fallbackFor="amazon-ember">AmazonEmberArabic_Md.ttf</font>
+        <font weight="700" style="normal" fallbackFor="amazon-ember">AmazonEmberArabic_Bd.ttf</font>
+    </family>
+
+    <!-- amazon-ember with a suffixed weight as part of family name and link amazon-regular/Thin/Light with amazon-ember-->
+    <alias name="amazon-ember-regular" to="amazon-ember" weight="400" />
+    <alias name="amazon-ember-thin" to="amazon-ember" weight="100" />
+    <alias name="amazon-ember-light" to="amazon-ember" weight="300" />
+    <alias name="amazon-regular" to="amazon-ember" />
+    <alias name="amazon-thin" to="amazon-ember-thin" />
+    <alias name="amazon-light" to="amazon-ember-light" />
+
+    <!-- Amazon Ember with a suffixed weight as part of family name and link Amazon Regular/Thin/Light with amazon-ember-->
+    <alias name="Amazon Ember" to="amazon-ember" />
+    <alias name="Amazon Ember Regular" to="amazon-ember" weight="400" />
+    <alias name="Amazon Ember Thin" to="amazon-ember" weight="100" />
+    <alias name="Amazon Ember Light" to="amazon-ember" weight="300" />
+    <alias name="Amazon Regular" to="amazon-ember" />
+    <alias name="Amazon Thin" to="amazon-ember-thin" />
+    <alias name="Amazon Light" to="amazon-ember-light" />
+
+    <family customizationType="new-named-family" name="amazon-ember-display">
+        <font weight="300" style="normal">AmazonEmberDisplay_Lt.ttf</font>
+        <font weight="400" style="normal">AmazonEmberDisplay_Rg.ttf</font>
+        <font weight="500" style="normal">AmazonEmberDisplay_Md.ttf</font>
+        <font weight="700" style="normal">AmazonEmberDisplay_Bd.ttf</font>
+    </family>
+
+    <alias name="amazon-ember-display-light" to="amazon-ember-display" weight="300" />
+    <alias name="amazon-ember-display-regular" to="amazon-ember-display" weight="400" />
+    <alias name="amazon-ember-display-medium" to="amazon-ember-display" weight="500" />
+    <alias name="amazon-ember-display-bold" to="amazon-ember-display" weight="700" />
+
+    <family customizationType="new-named-family" name="amazon-ember-condensed">
+        <font weight="100" style="normal">Amazon-Ember-Condensed-Thin.ttf</font>
+        <font weight="100" style="italic">Amazon-Ember-Condensed-ThinItalic.ttf</font>
+        <font weight="300" style="normal">Amazon-Ember-Condensed-Light.ttf</font>
+        <font weight="300" style="italic">Amazon-Ember-Condensed-LightItalic.ttf</font>
+        <font weight="400" style="normal">Amazon-Ember-Condensed-Regular.ttf</font>
+        <font weight="400" style="italic">Amazon-Ember-Condensed-RegularItalic.ttf</font>
+        <font weight="700" style="normal">Amazon-Ember-Condensed-Bold.ttf</font>
+        <font weight="700" style="italic">Amazon-Ember-Condensed-BoldItalic.ttf</font>
+    </family>
+
+    <alias name="amazon-ember-condensed-thin" to="amazon-ember-condensed" weight="100" />
+    <alias name="amazon-ember-condensed-light" to="amazon-ember-condensed" weight="300" />
+    <alias name="amazon-ember-condensed-regular" to="amazon-ember-condensed" weight="400" />
+    <alias name="amazon-ember-condensed-medium" to="amazon-ember-condensed" weight="500" />
+    <alias name="amazon-ember-condensed-bold" to="amazon-ember-condensed" weight="700" />
+
+    <family customizationType="new-named-family" name="Bookerly">
+        <font weight="400" style="normal">Bookerly-Regular.ttf</font>
+        <font weight="400" style="italic">Bookerly-RegularItalic.ttf</font>
+        <font weight="700" style="normal">Bookerly-Bold.ttf</font>
+        <font weight="700" style="italic">Bookerly-BoldItalic.ttf</font>
+    </family>
+
+    <!-- Enabling Kindle Symbol font for usage of icons or symbols on UI Messages -->
+    <family customizationType="new-named-family" name="kindle-symbol">
+        <font weight="400" style="normal">Kindle_Symbol.ttf</font>
+    </family>
+    <alias name="Kindle Symbol" to="kindle-symbol" />
+
+    <family customizationType="new-named-family" name="Kalam">
+        <font weight="400" style="normal">Kalam-Regular.ttf</font>
+        <font weight="700" style="normal">Kalam-Bold.ttf</font>
+        <font weight="300" style="normal">Kalam-Light.ttf</font>
+    </family>
+
+    <!-- Alexa Sans Display (Default/Light mode) -->
+    <family customizationType="new-named-family" name="alexa-sans-display">
+        <font weight="100" style="normal">Alexa-Sans-Display-Thin.otf</font>
+        <font weight="100" style="italic">Alexa-Sans-Display-Thin-Oblique.otf</font>
+        <font weight="300" style="normal">Alexa-Sans-Display-Light.otf</font>
+        <font weight="300" style="italic">Alexa-Sans-Display-Light-Oblique.otf</font>
+        <font weight="400" style="normal">Alexa-Sans-Display-Regular.otf</font>
+        <font weight="400" style="italic">Alexa-Sans-Display-Regular-Oblique.otf</font>
+        <font weight="500" style="normal">Alexa-Sans-Display-Medium.otf</font>
+        <font weight="500" style="italic">Alexa-Sans-Display-Medium-Oblique.otf</font>
+        <font weight="700" style="normal">Alexa-Sans-Display-Bold.otf</font>
+        <font weight="700" style="italic">Alexa-Sans-Display-Bold-Oblique.otf</font>
+        <font weight="800" style="normal">Alexa-Sans-Display-Heavy.otf</font>
+        <font weight="800" style="italic">Alexa-Sans-Display-Heavy-Oblique.otf</font>
+    </family>
+    <alias name="Alexa Sans Display" to="alexa-sans-display" />
+
+    <!-- Alexa Sans Text (Default/Light mode) -->
+    <family customizationType="new-named-family" name="alexa-sans-text">
+        <font weight="100" style="normal">Alexa-Sans-Text-Thin.otf</font>
+        <font weight="100" style="italic">Alexa-Sans-Text-Thin-Oblique.otf</font>
+        <font weight="300" style="normal">Alexa-Sans-Text-Light.otf</font>
+        <font weight="300" style="italic">Alexa-Sans-Text-Light-Oblique.otf</font>
+        <font weight="400" style="normal">Alexa-Sans-Text-Regular.otf</font>
+        <font weight="400" style="italic">Alexa-Sans-Text-Regular-Oblique.otf</font>
+        <font weight="500" style="normal">Alexa-Sans-Text-Medium.otf</font>
+        <font weight="500" style="italic">Alexa-Sans-Text-Medium-Oblique.otf</font>
+        <font weight="700" style="normal">Alexa-Sans-Text-Bold.otf</font>
+        <font weight="700" style="italic">Alexa-Sans-Text-Bold-Oblique.otf</font>
+        <font weight="800" style="normal">Alexa-Sans-Text-Heavy.otf</font>
+        <font weight="800" style="italic">Alexa-Sans-Text-Heavy-Oblique.otf</font>
+    </family>
+    <alias name="Alexa Sans Text" to="alexa-sans-text" />
+
+    <!-- Alexa Sans Display Dark -->
+    <family customizationType="new-named-family" name="alexa-sans-display-dark">
+        <font weight="100" style="normal">Alexa-Sans-Display-Dark-Thin.otf</font>
+        <font weight="100" style="italic">Alexa-Sans-Display-Dark-Thin-Oblique.otf</font>
+        <font weight="300" style="normal">Alexa-Sans-Display-Dark-Light.otf</font>
+        <font weight="300" style="italic">Alexa-Sans-Display-Dark-Light-Oblique.otf</font>
+        <font weight="400" style="normal">Alexa-Sans-Display-Dark-Regular.otf</font>
+        <font weight="400" style="italic">Alexa-Sans-Display-Dark-Regular-Oblique.otf</font>
+        <font weight="500" style="normal">Alexa-Sans-Display-Dark-Medium.otf</font>
+        <font weight="500" style="italic">Alexa-Sans-Display-Dark-Medium-Oblique.otf</font>
+        <font weight="700" style="normal">Alexa-Sans-Display-Dark-Bold.otf</font>
+        <font weight="700" style="italic">Alexa-Sans-Display-Dark-Bold-Oblique.otf</font>
+        <font weight="800" style="normal">Alexa-Sans-Display-Dark-Heavy.otf</font>
+        <font weight="800" style="italic">Alexa-Sans-Display-Dark-Heavy-Oblique.otf</font>
+    </family>
+    <alias name="Alexa Sans Display Dark" to="alexa-sans-display-dark" />
+
+    <!-- Alexa Sans Text Dark -->
+    <family customizationType="new-named-family" name="alexa-sans-text-dark">
+        <font weight="100" style="normal">Alexa-Sans-Text-Dark-Thin.otf</font>
+        <font weight="100" style="italic">Alexa-Sans-Text-Dark-Thin-Oblique.otf</font>
+        <font weight="300" style="normal">Alexa-Sans-Text-Dark-Light.otf</font>
+        <font weight="300" style="italic">Alexa-Sans-Text-Dark-Light-Oblique.otf</font>
+        <font weight="400" style="normal">Alexa-Sans-Text-Dark-Regular.otf</font>
+        <font weight="400" style="italic">Alexa-Sans-Text-Dark-Regular-Oblique.otf</font>
+        <font weight="500" style="normal">Alexa-Sans-Text-Dark-Medium.otf</font>
+        <font weight="500" style="italic">Alexa-Sans-Text-Dark-Medium-Oblique.otf</font>
+        <font weight="700" style="normal">Alexa-Sans-Text-Dark-Bold.otf</font>
+        <font weight="700" style="italic">Alexa-Sans-Text-Dark-Bold-Oblique.otf</font>
+        <font weight="800" style="normal">Alexa-Sans-Text-Dark-Heavy.otf</font>
+        <font weight="800" style="italic">Alexa-Sans-Text-Dark-Heavy-Oblique.otf</font>
+    </family>
+    <alias name="Alexa Sans Text Dark" to="alexa-sans-text-dark" />
+
+    <!-- Variable font aliases for Alexa Sans (Default/Light mode) -->
+    <!-- Display variants - Medium weight (500) -->
+    <alias name="variable-display-large" to="alexa-sans-display" weight="500" />
+    <alias name="variable-display-medium" to="alexa-sans-display" weight="500" />
+    <alias name="variable-display-small" to="alexa-sans-display" weight="500" />
+
+    <!-- Headline variants - Regular weight (400) -->
+    <alias name="variable-headline-large" to="alexa-sans-display" weight="400" />
+    <alias name="variable-headline-medium" to="alexa-sans-display" weight="400" />
+    <alias name="variable-headline-small" to="alexa-sans-display" weight="400" />
+
+    <!-- Title variants - Mixed weights -->
+    <alias name="variable-title-large" to="alexa-sans-text" weight="400" />
+    <alias name="variable-title-medium" to="alexa-sans-text" weight="500" />
+    <alias name="variable-title-small" to="alexa-sans-text" weight="500" />
+
+    <!-- Label variants - Medium weight (500) -->
+    <alias name="variable-label-large" to="alexa-sans-text" weight="500" />
+    <alias name="variable-label-medium" to="alexa-sans-text" weight="500" />
+    <alias name="variable-label-small" to="alexa-sans-text" weight="500" />
+
+    <!-- Body variants - Regular weight (400) -->
+    <alias name="variable-body-large" to="alexa-sans-text" weight="400" />
+    <alias name="variable-body-medium" to="alexa-sans-text" weight="400" />
+    <alias name="variable-body-small" to="alexa-sans-text" weight="400" />
+
+    <!-- Emphasized variants - Direct aliases to font families with increased weights -->
+    <!-- Display emphasized variants (500 → 700) -->
+    <alias name="variable-display-large-emphasized" to="alexa-sans-display" weight="700" />
+    <alias name="variable-display-medium-emphasized" to="alexa-sans-display" weight="700" />
+    <alias name="variable-display-small-emphasized" to="alexa-sans-display" weight="700" />
+
+    <!-- Headline emphasized variants (400 → 500) -->
+    <alias name="variable-headline-large-emphasized" to="alexa-sans-display" weight="500" />
+    <alias name="variable-headline-medium-emphasized" to="alexa-sans-display" weight="500" />
+    <alias name="variable-headline-small-emphasized" to="alexa-sans-display" weight="500" />
+
+    <!-- Title emphasized variants (400 → 500, 500 → 700) -->
+    <alias name="variable-title-large-emphasized" to="alexa-sans-text" weight="500" />
+    <alias name="variable-title-medium-emphasized" to="alexa-sans-text" weight="700" />
+    <alias name="variable-title-small-emphasized" to="alexa-sans-text" weight="700" />
+
+    <!-- Label emphasized variants (500 → 700) -->
+    <alias name="variable-label-large-emphasized" to="alexa-sans-text" weight="700" />
+    <alias name="variable-label-medium-emphasized" to="alexa-sans-text" weight="700" />
+    <alias name="variable-label-small-emphasized" to="alexa-sans-text" weight="700" />
+
+    <!-- Body emphasized variants (400 → 500) -->
+    <alias name="variable-body-large-emphasized" to="alexa-sans-text" weight="500" />
+    <alias name="variable-body-medium-emphasized" to="alexa-sans-text" weight="500" />
+    <alias name="variable-body-small-emphasized" to="alexa-sans-text" weight="500" />
+</fonts-modification>

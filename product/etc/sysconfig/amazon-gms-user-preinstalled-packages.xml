@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<!-- System packages to preinstall on all tablet devices, per user type.
+     OEMs must provide they own as well, listing their specific apps (like launcher, settings, etc...)
+     Documentation at frameworks/base/data/etc/preinstalled-packages-platform.xml
+-->
+<config>
+    <!--
+        Here the apps will have SYSTEM only.
+    -->
+    <!--
+        Apps that need to run on SYSTEM and evaluated by package owner.
+        Here the apps will have FULL and SYSTEM.
+    -->
+    <!--
+        Apps that do not need to run on SYSTEM and evaluated by package owner.
+        Here the apps will have FULL only.
+    -->
+
+    <install-in-user-type package="com.google.android.apps.youtube.music">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.youtube">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.apps.messaging">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.gm">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.apps.photos">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.contacts">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.apps.maps">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.apps.wellbeing">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.apps.nbu.files">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.google.android.configupdater">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.android.chrome">
+        <install-in user-type="PROFILE" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <!-- Force keep enabled apps list -->
+    <prevent-disable package="com.google.android.apps.setupwizard.searchselector"/>
+
+
+</config>

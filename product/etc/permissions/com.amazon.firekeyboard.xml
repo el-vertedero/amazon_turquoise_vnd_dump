@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.firekeyboard">
+        <!-- Allows launching dialog activity from background when RedStone2 is not active
+             and Writing Assist hardware key is pressed.-->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <!-- Allows setting the DEFAULT_INPUT_METHOD and SELECTED_INPUT_METHOD_SUBTYPE
+             Secure settings values to set RedStone2 as the default on-screen keyboard
+             when it is not but customer presses Writing Assist hardware key to trigger
+             RedStone2 writing assist flow.-->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

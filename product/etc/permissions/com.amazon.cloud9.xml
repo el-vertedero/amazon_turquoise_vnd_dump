@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.cloud9">
+        <!--
+	    Silk creates a singleUser service to read/write an app-specific
+	    device identifier that is shared across user profiles.
+        -->
+	<permission name="android.permission.INTERACT_ACROSS_USERS"/>
+	<!--
+            Required to call Build.getSerial() to get DSN. DSN is attached to
+	    Silk customer feedback to enable pulling device logs when debugging
+	    customer-reported Silk issues.
+	-->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+</permissions>

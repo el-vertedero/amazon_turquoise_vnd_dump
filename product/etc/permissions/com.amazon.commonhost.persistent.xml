@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.commonhost.persistent">
+        <!-- to listen to user switch broadcast, commonhost unbinds to services
+        running in previous user making them non-persistent -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+
+        <!-- Permissions for Device Engagement Metrics -->
+        <!-- to query app usage from UsageStatsManager -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <!-- to retrieve online account information without prompting the
+        user for access. Necessary for suppressing app usage metrics when a
+        child is using the device by checking for Google supervised status -->
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+
+        <!-- Required to use registerScanListener to receive the wifi scanResults to
+         monitor the SSID changes. -->
+        <permission name="android.permission.LOCATION_HARDWARE" />
+
+        <!-- to schedule delayed home launch in sleep state -->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+        <!-- Required to listen for SYSTEM_SUPERVISION role changes (GSA detection) -->
+        <permission name="android.permission.OBSERVE_ROLE_HOLDERS" />
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.csapp">
+        <!-- Required to call Build.getSerial() for DSN. DSN is needed for device health -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+</permissions>

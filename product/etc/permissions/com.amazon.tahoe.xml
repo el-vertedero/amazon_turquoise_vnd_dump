@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024-2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.tahoe">
+        <!-- Used for disabling/enabling several components in child profiles-->
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <!-- Amazon Kids modifies device's configuration settings in child profiles -->
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <!--
+            Amazon Kids needs to set "singleUser = true" for a ContentProvider
+            for PIN Authentication inside Kids profiles
+        -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <!-- For checking user states -->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <!-- Allows Amazon Kids to track screen time usage -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <!-- Allows Amazon Kids to interrupt child activity when limits are reached -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <!--
+            This permission allows calling Build.getSerial() to get DSN.
+            DSN is needed by various features such as Gift Messaging,
+            Cloud Parent Onboarding, etc.
+        -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- For running Amazon Kids OOBE setup in fullscreen mode -->
+        <permission name="android.permission.STATUS_BAR"/>
+        <!-- Write Secure and Global settings value. Amazon Kids sets multiple Global and
+        Secure settings values related to adult and child user setup -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- For managing wallpapers in the child profiles -->
+        <permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
+        <!-- Amazon Kids needs to sliently determine if a customer has a supervised account -->
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <!-- Needed by scheduling periodic tasks at the exact time, suce as checking VPC state  -->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    </privapp-permissions>
+</permissions>

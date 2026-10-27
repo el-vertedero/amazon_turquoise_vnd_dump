@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2026 Amazon.com, Inc. or its affiliates. All rights reserved.
+    PROPRIETARY/CONFIDENTIAL. USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.google.android.apps.restore">
+        <!-- Required to modify phone state during device setup and restore -->
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <!-- Required to start activities from background during restore process -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+</permissions>

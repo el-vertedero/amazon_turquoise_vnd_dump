@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.diode">
+        <!-- Required to access Build.getSerial() function to get the serial number of the device
+             for Arcus config.  -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+
+        <!-- Required for 1-click action for CSA or customer to remotely reboot a device to resolve
+             health issues -->
+        <permission name="android.permission.REBOOT"/>
+
+        <!-- Required for 1-click action for CSA or customer to remotely change accessibility
+             settings -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

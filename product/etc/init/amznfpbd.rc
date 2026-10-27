@@ -1,0 +1,36 @@
+#
+# Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+on early-init
+    on property:ro.boot.hardware.sku=""
+        setprop ro.product.bootanim.file nonketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=ROW-0
+        setprop ro.product.bootanim.file nonketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=EEA-0
+        setprop ro.product.bootanim.file nonketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=US-0
+        setprop ro.product.bootanim.file nonketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=JP-0
+        setprop ro.product.bootanim.file nonketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=AU-0
+        setprop ro.product.bootanim.file nonketresource/bootanimation.zip
+
+    on property:ro.boot.hardware.sku=ROW-1
+        setprop ro.product.bootanim.file ketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=EEA-1
+        setprop ro.product.bootanim.file ketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=US-1
+        setprop ro.product.bootanim.file ketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=JP-1
+        setprop ro.product.bootanim.file ketresource/bootanimation.zip
+    on property:ro.boot.hardware.sku=AU-1
+        setprop ro.product.bootanim.file ketresource/bootanimation.zip
+
+service amznfpbd /product/bin/amznfpbd
+    interface aidl amznfpbd
+    class main
+    user root
+    group system
+    oneshot
+    disabled

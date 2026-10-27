@@ -1,0 +1,7 @@
+<!-- Copyright (c) 2021 - 2024 Amazon.com, Inc. or its affiliates.  All rights reserved. -->
+<exceptions>
+    <exception package="com.amazon.alta.h2clientservice">
+        <!-- Required for reading information about the accounts -->
+        <permission name="android.permission.GET_ACCOUNTS" fixed="true"/>
+    </exception>
+</exceptions>

@@ -1,0 +1,108 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.product.brand=Amazon
+ro.product.product.device=turquoise
+ro.product.product.manufacturer=Amazon
+ro.product.product.model=ATTQWI
+ro.product.product.name=turquoise
+ro.product.build.date=Fri Sep 11 21:59:48 UTC 2026
+ro.product.build.date.utc=1789163988
+ro.product.build.fingerprint=Amazon/turquoise/turquoise:16/SL16SHIP2003/1344N:user/amz-p,release-keys
+ro.product.build.id=SL16SHIP2003
+ro.product.build.tags=amz-p,release-keys
+ro.product.build.type=user
+ro.product.build.version.incremental=1344N
+ro.product.build.version.release=16
+ro.product.build.version.release_or_codename=16
+ro.product.build.version.sdk=36
+ro.product.build.version.sdk_full=36.1
+####################################
+# from gen_build_prop.py:generate_build_info
+####################################
+# begin build properties
+ro.build.id=SL16SHIP2003
+ro.build.display.id=SL16SHIP2003.1344N
+ro.build.version.incremental=1344N
+ro.build.version.sdk=36
+ro.build.version.sdk_full=36.1
+ro.build.version.preview_sdk=0
+ro.build.version.preview_sdk_fingerprint=REL
+ro.build.version.codename=REL
+ro.build.version.all_codenames=REL
+ro.build.version.known_codenames=Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream,Baklava
+ro.build.version.release=16
+ro.build.version.release_or_codename=16
+ro.build.version.release_or_preview_display=16
+ro.build.version.security_patch=2026-08-01
+ro.build.version.base_os=
+ro.build.version.min_supported_target_sdk=28
+ro.build.date=Fri Sep 11 21:59:48 UTC 2026
+ro.build.date.utc=1789163988
+ro.build.type=user
+ro.build.user=build
+ro.build.host=2ccb5991b7dd
+ro.build.tags=amz-p,release-keys
+ro.build.flavor=turquoise-user
+# ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
+# use ro.product.cpu.abilist instead.
+ro.product.cpu.abi=arm64-v8a
+ro.product.locale=en-US
+ro.wifi.channels=
+# Do not try to parse description or thumbprint
+ro.build.description=turquoise-user 16 SL16SHIP2003 1344N amz-p,release-keys
+# end build properties
+####################################
+# from device/amazon/turquoise_common/product.prop
+####################################
+# Turquoise Bluetooth Vendor ID
+bluetooth.device_id.vendor_id=0x0171
+# Turquoise Bluetooth Product ID and version
+bluetooth.device_id.product_id=0x0750
+bluetooth.device_id.version=0x0100
+# POCM shutdown time after plug out usb.
+ro.product.charger.unplugged_shutdown_time=3100
+####################################
+# from device/amazon/turquoise/product.prop
+####################################
+import /product/etc/build_${ro.boot.product.hardware.sku}.prop
+import /product/etc/build_${ro.boot.hardware.sku}.prop
+####################################
+# from variable ADDITIONAL_PRODUCT_PROPERTIES
+####################################
+ro.product.build.16k_page.enabled=false
+ro.product.page_size=4096
+ro.build.characteristics=tablet
+ro.product.ab_ota_partitions=product,system,system_ext,vbmeta,vbmeta_system
+ro.product.cpu.pagesize.max=16384
+# Value overridden by post_process_props.py. Original value: default
+ro.dalvik.vm.enable_uffd_gc=true
+####################################
+# from variable PRODUCT_PRODUCT_PROPERTIES
+####################################
+persist.wm.extensions.enabled=true
+traced.relay_producer_port=vsock://-1:2010
+# Removed by post_process_props.py because overridden by ro.setupwizard.rotation_locked?=false
+#ro.setupwizard.rotation_locked?=true
+# Removed by post_process_props.py because overridden by setupwizard.theme?=glif_v4
+#setupwizard.theme?=glif_v3_light
+ro.opa.eligible_device=true
+ro.com.google.gmsversion=16_202512
+ro.setupwizard.rotation_locked=false
+setupwizard.theme=glif_v4
+is_expressive_design_enabled=true
+setupwizard.feature.enable_quick_start_flow=true
+setupwizard.feature.enable_restore_anytime=true
+ro.amazon.neo.aosp_qpr_version=25Q4
+ro.amazon.ota.swversion=0030601986180
+ro.bootanim.set_orientation_4627039422300187648=ORIENTATION_90
+remote_provisioning.tee.rkp_only=1
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+ro.crypto.metadata_init_delete_all_keys.enabled=false
+ro.audio.spatializer_binaural_enabled_default=false
+ro.audio.spatializer_transaural_enabled_default=false
+persist.wm.extensions.activity_embedding_guard_with_android_15=false
+ro.product.dsp.architecture=HIFI1
+# end of file
+

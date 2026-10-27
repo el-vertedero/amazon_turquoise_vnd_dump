@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<!--
+This XML file declares which activities should be preferred to handle
+certain intent or mime-types
+-->
+
+<preferred-activities>
+    <!--
+    Allow vnd.android.document/root to be only handled by Files by Google App.
+    This will default sdcard or any mount to use Files by Google as default.
+    -->
+    <item name="com.google.android.apps.nbu.files/.gateway.browse.BrowseGatewayHandler">
+        <filter>
+            <action name="android.intent.action.VIEW" />
+            <cat name="android.intent.category.DEFAULT" />
+            <scheme name="content" />
+            <type name="vnd.android.document/root" />
+        </filter>
+    </item>
+</preferred-activities>

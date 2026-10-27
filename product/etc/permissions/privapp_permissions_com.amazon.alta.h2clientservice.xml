@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2021 - 2024 Amazon.com, Inc. or its affiliates.  All rights reserved. -->
+<permissions>
+    <privapp-permissions package="com.amazon.alta.h2clientservice">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2021 - 2024 Amazon.com, Inc. or its affiliates.  All rights reserved. -->
+<permissions>
+    <privapp-permissions package="com.amazon.device.messaging">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+	<permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST" />
+	<permission name="android.permission.PACKAGE_USAGE_STATS" />
+    </privapp-permissions>
+</permissions>

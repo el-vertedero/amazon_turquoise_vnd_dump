@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<exceptions>
+   <exception package="com.amazon.wifimanager">
+        <!-- Added for location based country code service -->
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    </exception>
+</exceptions>

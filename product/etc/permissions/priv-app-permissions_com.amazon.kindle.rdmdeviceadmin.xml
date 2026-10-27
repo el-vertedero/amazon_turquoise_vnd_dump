@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates. All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.kindle.rdmdeviceadmin">
+        <!-- This permission allows RDM Client to modify the device's secure system
+        settings. This is required by RDM Client to reset FindYourDevice settings when
+        the RDM is enabled/disabled.
+        -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- This permission allows RDM Client to perform factory reset on the device.
+        This is required by RDM Client to remote factory reset the device when the
+        user requests.
+        -->
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <!-- This permission allows RDM Client to lock the device's screen.
+        This is required by RDM Client to remote lock the device when the user
+        requests.
+        -->
+        <permission name="android.permission.LOCK_DEVICE"/>
+        <!-- This permission allows RDM Client to interact and manage user accounts.
+        This is required by RDM Client to get Current user id that is active in the
+        device and check if it matches with the user who requested the remote action
+        from MYCD page.
+        -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <!-- This permission allows RDM Client to manage user profiles on the device.
+        This is required by RDM Client to manage multi-user scenarios.
+        -->
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+</permissions>

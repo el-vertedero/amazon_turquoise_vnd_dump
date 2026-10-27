@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.tablet.voyager">
+        <!-- Allows TabletVoyager app to update Settings.Secure values. Need this permission to enable/disable the Search experience on lock screen -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- Need this for searching data in various content providers like ContactsProvider & other providers that provides api's for searching -->
+        <permission name="android.permission.GLOBAL_SEARCH"/>
+        <!-- Need this for querying AppPredictionManager. This is used for showing Recently used/Suggested apps -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <!-- Need this for accessing hidden profiles via launcher APIs, e.g.  private profile -->
+        <permission name="android.permission.ACCESS_HIDDEN_PROFILES_FULL"/>
+    </privapp-permissions>
+</permissions>

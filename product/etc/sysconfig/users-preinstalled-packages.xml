@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 - 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<!-- System packages to preinstall on all tablet devices, per user type.
+     OEMs must provide they own as well, listing their specific apps (like launcher, settings, etc...)
+     Documentation at frameworks/base/data/etc/preinstalled-packages-platform.xml
+-->
+<config>
+    <!--
+        Here the apps will have SYSTEM only.
+    -->
+    <!--
+        Apps that need to run on SYSTEM and evaluated by package owner.
+        Here the apps will have FULL and SYSTEM.
+    -->
+    <!--
+        Apps that do not need to run on SYSTEM and evaluated by package owner.
+        Here the apps will have FULL only.
+    -->
+    <install-in-user-type package="com.amazon.neopactservice">
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+    <!-- Force keep enabled apps list -->
+    <prevent-disable package="com.amazon.neopactservice"/>
+    <prevent-disable package="com.amazon.kindle.magpie"/>
+    <prevent-disable package="com.amazon.device.software.ota"/>
+    <prevent-disable package="com.amazon.firekeyboard"/>
+    <prevent-disable package="com.amazon.tahoe"/>
+    <prevent-disable package="com.amazon.tablet.junco"/>
+    <prevent-disable package="com.amazon.client.metrics"/>
+    <prevent-disable package="com.amazon.alta.h2clientservice"/>
+    <prevent-disable package="com.amazon.identity.auth.device.authorization"/>
+    <prevent-disable package="com.amazon.kindle.kso"/>
+    <prevent-disable package="com.amazon.silverlight"/>
+    <prevent-disable package="com.amazon.tcomm"/>
+    <prevent-disable package="com.amazon.device.messaging"/>
+    <prevent-disable package="com.amazon.fpbservice"/>
+    <prevent-disable package="com.amazon.settings.systemupdates"/>
+</config>

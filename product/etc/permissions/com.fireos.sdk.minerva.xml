@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <library name="com.fireos.sdk.minerva" file="/product/framework/com.fireos.sdk.minerva.jar"/>
+    <feature name="com.fireos.sdk.minerva" version="12"/>
+</permissions>
+

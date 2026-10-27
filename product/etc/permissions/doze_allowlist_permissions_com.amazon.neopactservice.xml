@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <!-- Allowlisted app allows internet access in the background when in Doze idle -->
+    <allow-in-power-save package="com.amazon.neopactservice"/>
+</permissions>

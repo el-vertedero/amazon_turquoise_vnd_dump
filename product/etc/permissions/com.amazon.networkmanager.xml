@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.networkmanager">
+        <!-- Required to use DSN as a persistent salt crossing reboots to encrypt SSID
+             that saved in local file. -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- Required to use registerScanListener to receive the wifi scanResults to
+             monitor the SSID changes. -->
+        <permission name="android.permission.LOCATION_HARDWARE" />
+        <!-- Required to send out broadcast intents to all users by calling
+             sendBroadcastAsUser. -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+</permissions>

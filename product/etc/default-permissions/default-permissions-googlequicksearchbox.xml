@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<exceptions>
+  <exception package="com.google.android.googlequicksearchbox">
+    <!-- KITTYHAWK-14860: Google Search box does not have mic permissions
+	 by default.
+
+         NOTE: Most GMS apps have their default permissions set by Google
+         In a file we get from Google; see
+         /vendor/partner_gms/etc/permissions/privapp-permissions-google-product.xml
+
+         It is currently not well-understood why RECORD_AUDIO is not
+         already granted in this file.
+    -->
+      <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+  </exception>
+</exceptions>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<config>
+    <!-- List of packages to be excluded from private space -->
+    <!-- Amazon Shop -->
+    <install-in-user-type package="com.amazon.windowshop">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Amazon Alexa -->
+    <install-in-user-type package="com.amazon.dee.app">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Amazon Alexa Calendar -->
+    <install-in-user-type package="com.amazon.alexa.calendar.app">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Amazon Kids -->
+    <install-in-user-type package="com.amazon.tahoe">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Amazon Music - No Changes-->
+    <install-in-user-type package="com.amazon.mp3">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Audible -->
+    <install-in-user-type package="com.audible.application.kindle">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Luna -->
+    <install-in-user-type package="com.amazon.spiderpork">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Appstore -->
+    <install-in-user-type package="com.amazon.venezia">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Kindle -->
+    <install-in-user-type package="com.amazon.kindle">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Offers (KSO) -->
+    <install-in-user-type package="com.amazon.kindle.kso">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Prime Video -->
+    <install-in-user-type package="com.amazon.avod">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Silk Browser -->
+    <install-in-user-type package="com.amazon.cloud9">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Help & Feedback -->
+    <install-in-user-type package="com.amazon.csapp">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Settings -->
+    <install-in-user-type package="com.android.settings">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Tutorial -->
+    <install-in-user-type package="com.amazon.tablet.smart.accessories">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Amazon Photos -->
+    <install-in-user-type package="com.amazon.clouddrive.photos">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+    <!-- Demo app -->
+    <install-in-user-type package="com.amazon.cx_offline">
+        <install-in user-type="SYSTEM"/>
+        <install-in user-type="FULL"/>
+    </install-in-user-type>
+
+</config>

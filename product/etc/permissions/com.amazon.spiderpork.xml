@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2026 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.spiderpork">
+        <!-- required by MAP: https://w.amazon.com/bin/view/IdentityServices/Mobile/MAP/PhoenixSDK -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <!-- Allow the application to write secure settings. Needed for allowing Luna to enable Alexa on app start -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+</permissions>

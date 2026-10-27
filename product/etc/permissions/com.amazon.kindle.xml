@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.kindle">
+        <!-- get DSN for MAP -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+        <!-- external sdcard storage support -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+
+        <!-- For household sharing -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+
+        <!-- modify system brightness -->
+        <permission name="android.permission.WRITE_SETTINGS" />
+    </privapp-permissions>
+</permissions>

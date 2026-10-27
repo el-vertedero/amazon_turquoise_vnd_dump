@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<exceptions>
+    <exception package="com.amazon.kindle.magpie">
+        <!-- Permissions required for FFS -->
+        <!-- Required to disable Bluetooth -->
+        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false"/>
+        <!-- Required to advertise FFS beacons -->
+        <permission name="android.permission.BLUETOOTH_ADVERTISE" fixed="false"/>
+        <!-- Required to scan near by wifi access points -->
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+    </exception>
+</exceptions>

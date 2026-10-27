@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.shpm">
+
+        <!-- This is required for starting FG service from BroadcastRecievers -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" fixed="true"/>
+
+        <!-- This is required to re-enable OOBE -->
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" fixed="true"/>
+
+        <!-- This is required to trigger shutdown after ShipMode -->
+        <permission name="android.permission.SHUTDOWN" fixed="true"/>
+
+        <!-- This is required to launch activities for u10 as ShipMode is running in u0 -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS" fixed="true"/>
+    </privapp-permissions>
+</permissions>

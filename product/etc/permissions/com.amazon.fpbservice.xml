@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.fpbservice">
+        <!-- This is required for starting FG service from BroadcastRecievers -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" fixed="true"/>
+
+        <!-- Bluetooth permission required for Stylus pairing and unpairing -->
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" fixed="true"/>
+
+        <!-- This is required for write global settings -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" fixed="true"/>
+
+        <!-- Permission required for verifying that the service is running
+            only in the foreground user via UserManager.isUserForeground -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS" fixed="true"/>
+
+        <!-- Permission required for enabling/disabling stylus settings pages -->
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" fixed="true"/>
+    </privapp-permissions>
+</permissions>

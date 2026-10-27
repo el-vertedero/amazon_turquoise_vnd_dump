@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+	<library name="com.amazon.device.messaging.sdk" file="/product/framework/com.amazon.device.messaging.sdk.jar"/>
+	<library name="com.fireos.sdk.adm" file="/product/framework/com.amazon.device.messaging.sdk.jar"/>
+	<library name="com.amazon.device.messaging" file="/product/framework/com.amazon.device.messaging.sdk.jar"/>
+</permissions>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.d3">
+        <!-- To install demo packages -->
+        <permission name="android.permission.INSTALL_PACKAGE_UPDATES"/>
+        <!-- To switch USB between host/device mode -->
+        <permission name="android.permission.MANAGE_USB"/>
+        <!-- To detect if the demo CX is running -->
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <!-- To write to Secure Settings for setting demo flags -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- To force nightly reboots (on demo devices only) -->
+        <permission name="android.permission.REBOOT"/>
+        <!-- To start DemoDeviceService from background -->
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <!-- To start Demo ProvisioningUI Activity from background -->
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+</permissions>

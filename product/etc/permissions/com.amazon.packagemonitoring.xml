@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.packagemonitoring">
+        <!-- Permission required to show the dialog in the context of the current user -->
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <!-- Permission required to Verify and approve/reject app installations -->
+        <permission name="android.permission.PACKAGE_VERIFICATION_AGENT"/>
+        <!-- Permission required to request uninstall of installed packages -->
+        <permission name="android.permission.REQUEST_DELETE_PACKAGES"/>
+        <!-- Permission required to retrieve the device serial number -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+         <!-- Permission required to read the device config -->
+        <permission name="android.permission.READ_DEVICE_CONFIG"/>
+        <!-- Permission required to programmatically uninstall apps -->
+        <permission name="android.permission.DELETE_PACKAGES"/>
+    </privapp-permissions>
+</permissions>

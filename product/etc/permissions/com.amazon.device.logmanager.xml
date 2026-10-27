@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2025 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <!-- LogManager client uploads log files from FOS devices to cloud:S3 -->
+    <privapp-permissions package="com.amazon.device.logmanager">
+        <!-- Needed to read log files from dropbox - for getNextEntry() api -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <!-- Needed to read log files from dropbox - for getNextEntry() api
+             This permission was introduced with SDK35 this is now required to access dropbox data
+             ref: developer.android.com/reference/android/os/DropBoxManager
+             ref: developer.android.com/reference/android/Manifest.permission#READ_DROPBOX_DATA -->
+        <permission name="android.permission.READ_DROPBOX_DATA" />
+        <!-- Needed to read DSN of the device, DSN is crucial in the log upload funtionlity,dsn
+             is added to the metadata of the log files which is then indexed in the cloud service
+             to store these log files, the logs are uploaded only on request basis from devices and
+             also require a VP approval,not having DSN will break the core log upload flow -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+</permissions>

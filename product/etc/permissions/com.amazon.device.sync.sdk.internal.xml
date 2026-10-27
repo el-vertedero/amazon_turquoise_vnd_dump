@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2024 - 2024 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+	<library name="com.fireos.sdk.whispersync" file="/product/priv-app/com.amazon.device.sync.sdk.internal/com.amazon.device.sync.sdk.internal.apk"
+		dependency="com.fireos.sdk.mapclientlib:com.fireos.sdk.messaging:com.fireos.sdk.minerva"/>
+</permissions>
+
